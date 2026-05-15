@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --ink: #1a2010;
+  --cream: #f6f3ea;
+  --sand: #e7e3d2;
+  --olive: #8a9a4b;
+  --olive-deep: #6b7a35;
+  --leaf: #b3c468;
+  --forest: #2d3a1a;
+  --forest-deep: #1a2210;
+  --muted: #6b6b6b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-cream: var(--cream);
+  --color-sand: var(--sand);
+  --color-olive: var(--olive);
+  --color-olive-deep: var(--olive-deep);
+  --color-leaf: var(--leaf);
+  --color-forest: var(--forest);
+  --color-forest-deep: var(--forest-deep);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-sans-ui);
+  --font-serif: var(--font-serif-display);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans-ui), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+  max-width: 100vw;
+}
+
+.font-serif-display {
+  font-family: var(--font-serif-display), ui-serif, Georgia, serif;
+  font-feature-settings: "liga", "dlig", "kern";
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.font-serif-display em,
+.font-serif-display i {
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Site-wide body copy size. Use on paragraphs / long-form blocks so
+   article, hero, and section body text all share one rhythm. */
+.body-base,
+.body-base p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.marquee-track {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
