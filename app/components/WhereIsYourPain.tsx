@@ -363,7 +363,7 @@ export default function WhereIsYourPain() {
                 }}
               />
               <Image
-                src="/Images/Where-Is-Your-Pain.png"
+                src="/images/Where-Is-Your-Pain.png"
                 alt="Human anatomy illustration showing common pain regions treated at Reno Regenerative Medicine"
                 fill
                 sizes="(min-width: 1280px) 620px, (min-width: 1024px) 580px, 90vw"
