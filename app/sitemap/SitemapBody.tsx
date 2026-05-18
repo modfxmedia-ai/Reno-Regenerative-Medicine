@@ -15,51 +15,8 @@ function labelFor(p: PageMeta): string {
   );
 }
 
-function Icon({ name }: { name: SitemapGroup["icon"] }) {
-  const stroke = "currentColor";
-  switch (name) {
-    case "compass":
-      return (
-        <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="12" r="9" />
-          <path d="m15 9-2 6-6 2 2-6 6-2Z" />
-        </svg>
-      );
-    case "spark":
-      return (
-        <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8" />
-        </svg>
-      );
-    case "heart":
-      return (
-        <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 20s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 10c0 5.65-7 10-7 10Z" />
-        </svg>
-      );
-    case "tag":
-      return (
-        <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M3 12V4h8l10 10-8 8L3 12Z" />
-          <circle cx="7.5" cy="7.5" r="1.2" />
-        </svg>
-      );
-    case "shield":
-      return (
-        <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 3 4 6v6c0 4.5 3.4 8.4 8 9 4.6-.6 8-4.5 8-9V6l-8-3Z" />
-        </svg>
-      );
-    case "more":
-    default:
-      return (
-        <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="6" cy="12" r="1.4" />
-          <circle cx="12" cy="12" r="1.4" />
-          <circle cx="18" cy="12" r="1.4" />
-        </svg>
-      );
-  }
+function slugify(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
 
 type Props = {
@@ -70,7 +27,6 @@ type Props = {
 
 export default function SitemapBody({ groups, posts, totalLinks }: Props) {
   const [query, setQuery] = useState("");
-
   const q = query.trim().toLowerCase();
 
   const filteredGroups = useMemo(() => {
@@ -101,41 +57,77 @@ export default function SitemapBody({ groups, posts, totalLinks }: Props) {
     );
   }, [sortedPosts, q]);
 
+  // Group posts by first letter for an A–Z index
+  const postsByLetter = useMemo(() => {
+    const map = new Map<string, PageMeta[]>();
+    for (const p of filteredPosts) {
+      const letter = labelFor(p).charAt(0).toUpperCase();
+      const key = /[A-Z]/.test(letter) ? letter : "#";
+      const bucket = map.get(key) ?? [];
+      bucket.push(p);
+      map.set(key, bucket);
+    }
+    return [...map.entries()].sort(([a], [b]) => a.localeCompare(b));
+  }, [filteredPosts]);
+
   const visibleCount =
     filteredGroups.reduce((n, g) => n + g.pages.length, 0) +
     filteredPosts.length;
 
+  const navItems = [
+    ...filteredGroups.map((g) => ({
+      id: slugify(g.heading),
+      label: g.heading,
+      count: g.pages.length,
+    })),
+    ...(filteredPosts.length > 0
+      ? [{ id: "journal", label: "Journal", count: filteredPosts.length }]
+      : []),
+  ];
+
   return (
-    <section className="bg-cream">
-      {/* Stats / search bar */}
-      <div className="border-b border-[#e8e4d9] bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-10">
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-2xl">
-              <span className="text-xs uppercase tracking-[0.3em] text-[#3d7a52]">
+    <section className="bg-white">
+      {/* ── Intro / search ────────────────────────────────────────────── */}
+      <div className="border-b border-[#e8e4d9]">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+          <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-end">
+            <div>
+              <span className="text-[11px] font-medium uppercase tracking-[0.32em] text-[#3d7a52]">
                 Site Directory
               </span>
-              <h2 className="mt-3 font-serif-display text-3xl text-ink sm:text-4xl">
-                Every page, in one place.
+              <h2 className="mt-4 font-serif-display text-[2.25rem] leading-[1.1] text-ink sm:text-5xl">
+                Every page on
+                <br />
+                <span className="italic text-[#3d7a52]">renoregen.com</span>.
               </h2>
-              <p className="mt-3 text-base leading-relaxed text-ink/70">
-                Use the search to jump to any service, condition, or article —
-                or browse the sections below.
+              <p className="mt-5 max-w-lg text-base leading-relaxed text-ink/65">
+                A complete, human-readable index of the site — services we
+                offer, conditions we treat, articles we&apos;ve written, and
+                everything in between.
               </p>
             </div>
 
-            <div className="flex flex-wrap items-stretch gap-3 lg:flex-nowrap">
-              <Stat label="Total links" value={totalLinks} />
-              <Stat label="Articles" value={posts.length} />
-              <Stat label="Sections" value={groups.length} />
-            </div>
+            <dl className="grid grid-cols-3 gap-px overflow-hidden rounded-sm border border-[#e8e4d9] bg-[#e8e4d9] text-center">
+              <Metric label="Total pages" value={totalLinks} />
+              <Metric label="Articles" value={posts.length} />
+              <Metric label="Sections" value={groups.length} />
+            </dl>
           </div>
 
-          <div className="mt-8">
-            <label className="relative block">
+          {/* Search */}
+          <div className="mt-12 border-t border-[#e8e4d9] pt-8">
+            <label className="group relative block">
               <span className="sr-only">Search the sitemap</span>
-              <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink/40">
-                <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+              <span className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-ink/35 transition-colors group-focus-within:text-[#3d7a52]">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  className="h-5 w-5"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <circle cx="11" cy="11" r="7" />
                   <path d="m20 20-3.5-3.5" />
                 </svg>
@@ -144,121 +136,196 @@ export default function SitemapBody({ groups, posts, totalLinks }: Props) {
                 type="search"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search pages, services, conditions, articles…"
-                className="w-full rounded-full border border-[#e8e4d9] bg-cream/60 py-3.5 pl-12 pr-5 text-base text-ink placeholder:text-ink/40 outline-none transition-colors focus:border-[#3d7a52] focus:bg-white"
+                placeholder="Search the directory…"
+                className="w-full border-0 border-b border-transparent bg-transparent pb-3 pl-8 pr-4 font-serif-display text-2xl text-ink placeholder:text-ink/30 outline-none transition-colors focus:border-[#3d7a52] sm:text-3xl"
               />
             </label>
             {q && (
-              <p className="mt-3 text-sm text-ink/60">
+              <p className="mt-3 pl-8 text-sm text-ink/55">
                 {visibleCount === 0
                   ? "No matches — try a different term."
-                  : `${visibleCount} match${visibleCount === 1 ? "" : "es"} for “${query}”.`}
+                  : `${visibleCount} result${visibleCount === 1 ? "" : "s"}.`}
               </p>
             )}
           </div>
         </div>
       </div>
 
-      {/* Group cards */}
-      <div className="mx-auto max-w-7xl px-6 py-20">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {filteredGroups.map((group, i) => (
-            <motion.article
-              key={group.heading}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.55, ease, delay: i * 0.04 }}
-              className="group relative flex flex-col rounded-2xl border border-[#e8e4d9] bg-white p-7 shadow-[0_1px_2px_rgba(10,18,13,0.04)] transition-all hover:-translate-y-0.5 hover:border-[#c6b180] hover:shadow-[0_18px_40px_-24px_rgba(10,18,13,0.25)]"
-            >
-              <div className="mb-5 flex items-center justify-between">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#f3d99a]/30 text-[#3d7a52]">
-                  <Icon name={group.icon} />
-                </span>
-                <span className="text-xs font-medium uppercase tracking-[0.18em] text-ink/40">
-                  {group.pages.length} {group.pages.length === 1 ? "page" : "pages"}
-                </span>
-              </div>
-
-              <h3 className="font-serif-display text-2xl text-ink">
-                {group.heading}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink/60">
-                {group.description}
+      {/* ── Directory body: sticky nav + long-form lists ──────────────── */}
+      <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+        <div className="grid gap-12 lg:grid-cols-[200px_1fr] lg:gap-16">
+          {/* Sticky section nav */}
+          <aside className="hidden lg:block">
+            <div className="sticky top-28">
+              <p className="mb-4 text-[10px] font-medium uppercase tracking-[0.32em] text-ink/45">
+                On this page
               </p>
-
-              <ul className="mt-6 space-y-1.5 border-t border-[#e8e4d9]/70 pt-5">
-                {group.pages.map((p) => (
-                  <li key={p.slug}>
-                    <Link
-                      href={p.slug}
-                      className="group/link flex items-center justify-between gap-3 rounded-lg px-3 py-2 text-[15px] text-ink/80 transition-colors hover:bg-[#f6f3ea] hover:text-[#0a120d]"
+              <ul className="space-y-2.5 border-l border-[#e8e4d9]">
+                {navItems.map((item) => (
+                  <li key={item.id}>
+                    <a
+                      href={`#${item.id}`}
+                      className="group flex items-baseline justify-between gap-3 border-l-2 border-transparent pl-4 text-sm text-ink/70 transition-all hover:border-[#3d7a52] hover:pl-5 hover:text-ink"
                     >
-                      <span className="truncate">{labelFor(p)}</span>
-                      <span
-                        aria-hidden
-                        className="text-ink/30 opacity-0 transition-all group-hover/link:translate-x-0.5 group-hover/link:opacity-100"
-                      >
-                        →
+                      <span className="truncate">{item.label}</span>
+                      <span className="text-[11px] tabular-nums text-ink/35">
+                        {item.count}
                       </span>
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
-            </motion.article>
-          ))}
-        </div>
-
-        {/* Blog Articles */}
-        {filteredPosts.length > 0 && (
-          <div className="mt-20">
-            <div className="flex items-end justify-between border-b border-[#e8e4d9] pb-5">
-              <div>
-                <span className="text-xs uppercase tracking-[0.3em] text-[#3d7a52]">
-                  Journal
-                </span>
-                <h2 className="mt-2 font-serif-display text-3xl text-ink sm:text-4xl">
-                  Blog Articles
-                </h2>
-              </div>
-              <span className="hidden text-sm text-ink/50 sm:block">
-                {filteredPosts.length} of {posts.length} · alphabetical
-              </span>
             </div>
+          </aside>
 
-            <ul className="mt-8 grid gap-x-10 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
-              {filteredPosts.map((post) => (
-                <li
-                  key={post.slug}
-                  className="border-b border-dashed border-[#e8e4d9]"
+          {/* Content column */}
+          <div className="min-w-0 space-y-20">
+            {filteredGroups.map((group, gi) => (
+              <motion.section
+                key={group.heading}
+                id={slugify(group.heading)}
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.5, ease, delay: gi * 0.03 }}
+                className="scroll-mt-28"
+              >
+                <header className="flex items-end justify-between gap-6 border-b border-[#0a120d]/15 pb-5">
+                  <div>
+                    <span className="text-[10px] font-medium uppercase tracking-[0.32em] text-[#3d7a52]">
+                      §{String(gi + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="mt-2 font-serif-display text-3xl text-ink sm:text-[2rem]">
+                      {group.heading}
+                    </h3>
+                    <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink/60">
+                      {group.description}
+                    </p>
+                  </div>
+                  <span className="hidden shrink-0 font-serif-display text-3xl tabular-nums text-ink/20 sm:block">
+                    {String(group.pages.length).padStart(2, "0")}
+                  </span>
+                </header>
+
+                <ul className="mt-2 divide-y divide-[#e8e4d9]">
+                  {group.pages.map((p) => (
+                    <li key={p.slug}>
+                      <Link
+                        href={p.slug}
+                        className="group/row flex items-center gap-6 py-4 transition-colors hover:bg-[#f6f3ea]/60"
+                      >
+                        <span className="flex-1 text-[17px] text-ink/85 transition-colors group-hover/row:text-[#0a120d]">
+                          {labelFor(p)}
+                        </span>
+                        <span className="hidden font-mono text-[12px] tracking-tight text-ink/35 sm:block">
+                          {p.slug}
+                        </span>
+                        <span
+                          aria-hidden
+                          className="text-ink/30 transition-all group-hover/row:translate-x-1 group-hover/row:text-[#3d7a52]"
+                        >
+                          →
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </motion.section>
+            ))}
+
+            {/* Journal — A–Z index */}
+            {filteredPosts.length > 0 && (
+              <motion.section
+                id="journal"
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.5, ease }}
+                className="scroll-mt-28"
+              >
+                <header className="flex items-end justify-between gap-6 border-b border-[#0a120d]/15 pb-5">
+                  <div>
+                    <span className="text-[10px] font-medium uppercase tracking-[0.32em] text-[#3d7a52]">
+                      Index
+                    </span>
+                    <h3 className="mt-2 font-serif-display text-3xl text-ink sm:text-[2rem]">
+                      Journal
+                    </h3>
+                    <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink/60">
+                      Every article we&apos;ve published — sorted alphabetically.
+                    </p>
+                  </div>
+                  <span className="hidden shrink-0 font-serif-display text-3xl tabular-nums text-ink/20 sm:block">
+                    {String(filteredPosts.length).padStart(2, "0")}
+                  </span>
+                </header>
+
+                <div className="mt-10 space-y-12">
+                  {postsByLetter.map(([letter, items]) => (
+                    <div
+                      key={letter}
+                      className="grid gap-4 sm:grid-cols-[60px_1fr] sm:gap-8"
+                    >
+                      <div className="font-serif-display text-5xl leading-none text-[#c6b180] sm:text-6xl">
+                        {letter}
+                      </div>
+                      <ul className="divide-y divide-[#e8e4d9] border-t border-[#e8e4d9]">
+                        {items.map((post) => (
+                          <li key={post.slug}>
+                            <Link
+                              href={post.slug}
+                              className="group/row flex items-center gap-4 py-3 text-[15px] leading-snug text-ink/80 transition-colors hover:text-[#3d7a52]"
+                            >
+                              <span className="flex-1">{labelFor(post)}</span>
+                              <span
+                                aria-hidden
+                                className="text-ink/25 opacity-0 transition-all group-hover/row:translate-x-0.5 group-hover/row:opacity-100"
+                              >
+                                →
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </motion.section>
+            )}
+
+            {/* Empty state */}
+            {filteredGroups.length === 0 && filteredPosts.length === 0 && (
+              <div className="rounded-sm border border-dashed border-[#e8e4d9] p-12 text-center">
+                <p className="font-serif-display text-2xl text-ink">
+                  Nothing found.
+                </p>
+                <p className="mt-2 text-sm text-ink/55">
+                  Try a different keyword, or clear the search.
+                </p>
+                <button
+                  onClick={() => setQuery("")}
+                  className="mt-5 text-sm font-medium text-[#3d7a52] underline-offset-4 hover:underline"
                 >
-                  <Link
-                    href={post.slug}
-                    className="flex items-start gap-3 py-3 text-[15px] leading-snug text-ink/80 transition-colors hover:text-[#3d7a52]"
-                  >
-                    <span
-                      aria-hidden
-                      className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-[#c6b180]"
-                    />
-                    <span>{labelFor(post)}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+                  Clear search
+                </button>
+              </div>
+            )}
           </div>
-        )}
+        </div>
       </div>
     </section>
   );
 }
 
-function Stat({ label, value }: { label: string; value: number }) {
+function Metric({ label, value }: { label: string; value: number }) {
   return (
-    <div className="min-w-[120px] rounded-xl border border-[#e8e4d9] bg-cream/50 px-5 py-4 text-center">
-      <div className="font-serif-display text-3xl text-ink">{value}</div>
-      <div className="mt-1 text-[11px] font-medium uppercase tracking-[0.18em] text-ink/55">
+    <div className="bg-white px-4 py-5">
+      <dt className="text-[10px] font-medium uppercase tracking-[0.24em] text-ink/55">
         {label}
-      </div>
+      </dt>
+      <dd className="mt-1 font-serif-display text-3xl tabular-nums text-ink">
+        {value}
+      </dd>
     </div>
   );
 }
