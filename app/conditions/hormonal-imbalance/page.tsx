@@ -9,7 +9,7 @@ import ConditionShell from "../../components/ConditionShell";
 export const metadata: Metadata = {
   title: "Find Your Spark Again With Hormonal Imbalance Care",
   description:
-    "Reno Regenerative Medicine treats hormonal imbalance in men and women in Reno, NV with bioidentical hormone therapy. Call (775) 683-9026.",
+    "Unexplained fatigue, weight gain, and brain fog often stem from shifting hormones. We use bioidentical therapy to restore balance. Visit us!",
   alternates: { canonical: "https://renoregen.com/conditions/hormonal-imbalance/" },
 };
 

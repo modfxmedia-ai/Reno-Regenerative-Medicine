@@ -14,7 +14,7 @@ export const metadata: Metadata = buildMeta({
   slug: `/${SLUG}/`,
   title: "Restore Proper Alignment With a Chiropractor in Reno, NV",
   description:
-    "Our Reno chiropractor corrects spinal misalignments using chiropractic care, stretching, exercise, and healthy lifestyle guidance. Call (775) 683-9026.",
+    "Ease your joint and back discomfort with skilled chiropractic care in Reno, NV. We listen to you and designs a custom plan based on your needs. Visit us!",
   image: service.image,
 });
 

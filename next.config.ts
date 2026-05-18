@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
       { source: "/patient-reviews", destination: "/reviews/", permanent: true },
       { source: "/patient-reviews/", destination: "/reviews/", permanent: true },
 
-      // --- Contact-us legacy URL ---
+      // --- Contact route: legacy /contact-us/ from Vercel redesign → live /contact/ ---
       { source: "/contact-us", destination: "/contact/", permanent: true },
       { source: "/contact-us/", destination: "/contact/", permanent: true },
 

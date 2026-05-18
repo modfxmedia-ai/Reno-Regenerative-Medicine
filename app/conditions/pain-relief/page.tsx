@@ -9,7 +9,7 @@ import ConditionShell from "../../components/ConditionShell";
 export const metadata: Metadata = {
   title: "Explore Holistic Pain Management in Sparks, NV",
   description:
-    "Reno Regenerative Medicine treats chronic and acute pain in Reno, NV with naturopathic, non-surgical therapies tailored to your total health. Call (775) 683-9026.",
+    "Living with daily aches drains your energy. Our pain care clinic in Sparks, NV focuses on natural healing to help you find true comfort. Call us today!",
   alternates: { canonical: "https://renoregen.com/conditions/pain-relief/" },
 };
 

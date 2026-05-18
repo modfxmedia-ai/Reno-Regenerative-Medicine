@@ -115,9 +115,9 @@ export const PAGES: PageMeta[] = [
   },
   {
     slug: "/appointments/",
-    title: "Request an Appointment",
+    title: "Appointments",
     description:
-      "Ready to start feeling better? Request an appointment at Reno Regenerative Medicine today. We welcome new patients and are here to help you heal.",
+      "Find relief at Reno Regenerative. Explore our Appointments page to learn how our Reno pain management clinic can help you. Call now!",
     priority: 0.8,
   },
   {
@@ -245,7 +245,7 @@ export const PAGES: PageMeta[] = [
     slug: "/conditions/neck-pain/",
     title: "Compassionate Care for Neck Pain | Reno Regenerative",
     description:
-      "Neck pain can limit your movement and affect your quality of life. Our team offers targeted, non-surgical care to reduce tension and restore mobility.",
+      "Constant neck soreness and stiffness make it hard to focus. Our team works on gently aligning your spine and reducing muscle strain. Book a visit now.",
     priority: 0.8,
   },
   {
@@ -474,8 +474,12 @@ const POST_SLUGS: { slug: string; title: string; description: string }[] = [
     description:
       "A backpacker's guide to sciatica — symptoms, causes, and the treatment options that can get you back on the trail.",
   },
-  {
-    slug: "/habits-that-quietly-worsen-knee-pain/",
+  {    slug: "/chiropractic-care-active-weekends-mountain-adventures/",
+    title: "Reno Weekend Athletes Guide to Chiropractic Relief",
+    description:
+      "Stay active in the Sierra with a trusted chiropractor in Reno, NV, helping reduce pain, improve mobility, and support recovery for weekend adventures.",
+  },
+  {    slug: "/habits-that-quietly-worsen-knee-pain/",
     title: "Habits That Quietly Worsen Knee Pain",
     description:
       "Common everyday habits that may be silently making your knee pain worse — and what to do instead.",
@@ -494,13 +498,13 @@ export const POSTS: PageMeta[] = POST_SLUGS.map((p) => ({
 export const CATEGORIES: PageMeta[] = [
   {
     slug: "/category/blog/",
-    title: d("Blog Articles"),
+    title: d("Blog"),
     description: "All blog articles from Reno Regenerative Medicine.",
     priority: 0.4,
   },
   {
     slug: "/category/regenerative-medicine/",
-    title: d("Regenerative Medicine Articles"),
+    title: d("Regenerative Medicine"),
     description:
       "Articles on regenerative medicine treatments, research and patient outcomes.",
     priority: 0.4,

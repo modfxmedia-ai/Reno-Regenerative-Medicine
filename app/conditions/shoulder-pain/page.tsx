@@ -9,7 +9,7 @@ import ConditionShell from "../../components/ConditionShell";
 export const metadata: Metadata = {
   title: "Get Help From an Expert Shoulder Pain Doctor in Reno, NV",
   description:
-    "Reno Regenerative Medicine treats rotator cuff tears, bursitis, arthritis, and frozen shoulder in Reno, NV without surgery. Call (775) 683-9026.",
+    "Trouble lifting your arm or sleeping on your side? See our shoulder specialist in Reno, NV to repair soft tissue and restore your mobility. Book today!",
   alternates: { canonical: "https://renoregen.com/conditions/shoulder-pain/" },
 };
 

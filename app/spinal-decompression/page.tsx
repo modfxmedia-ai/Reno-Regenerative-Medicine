@@ -14,7 +14,7 @@ export const metadata: Metadata = buildMeta({
   slug: `/${SLUG}/`,
   title: "Relief for Back Pain: Spinal Decompression in Reno, NV",
   description:
-    "Non-invasive spinal decompression at Reno Regenerative gently stretches the spine to relieve disc pressure and promote natural healing. Call (775) 683-9026.",
+    "Try non-surgical spinal decompression therapy in Reno, NV. Our approach relieves pressure on your spine so you can feel better. Call us to learn more.",
   image: service.image,
 });
 

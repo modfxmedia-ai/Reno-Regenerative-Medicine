@@ -12,9 +12,9 @@ const service = SERVICES_BY_SLUG[SLUG];
 
 export const metadata: Metadata = buildMeta({
   slug: `/${SLUG}/`,
-  title: "Rehydrate and Rejuvenate With Restorative Nutritional IVs in Reno, NV",
+  title: "Rehydrate and Rejuvenate With Restorative Nutritional IVs",
   description:
-    "Nutritional IV therapy at Reno Regenerative delivers vitamins directly to your bloodstream for fast relief from fatigue, stress, dehydration and more. Call (775) 683-9026.",
+    "Boost your energy and wellness with a customized nutritional IV drip. Reno Regenerative makes the process simple and comfortable for you. Book now!",
   image: service.image,
 });
 

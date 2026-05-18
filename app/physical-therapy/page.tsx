@@ -14,7 +14,7 @@ export const metadata: Metadata = buildMeta({
   slug: `/${SLUG}/`,
   title: "Personalized Physical Therapy to Restore Your Movement",
   description:
-    "Reno Regenerative Medicine offers physical therapy in Reno, NV for personal injury, auto accidents, sports injuries, and mobility problems. Call (775) 683-9026.",
+    "Start your healing journey with guided physical rehabilitation. Reno Regenerative designs a plan to build strength and ease your pain. Call to book a session!",
   image: service.image,
 });
 

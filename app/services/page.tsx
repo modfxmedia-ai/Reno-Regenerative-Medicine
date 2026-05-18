@@ -10,7 +10,7 @@ export const metadata: Metadata = buildMeta({
   slug: "/services/",
   title: "Discover Regenerative and Integrative Medicine in Reno, NV",
   description:
-    "Reno Regenerative Medicine offers joint injections, chiropractic care, spinal decompression, nutritional IVs, bioidentical hormones, GAINSWave, and more in Reno, NV.",
+    "Explore regenerative & integrative care in Reno, NV. We focus on finding the root cause of your pain to help you feel better naturally. Call us today!",
 });
 
 export default function ServicesPage() {

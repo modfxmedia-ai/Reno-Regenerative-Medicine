@@ -9,7 +9,7 @@ import ConditionShell from "../../components/ConditionShell";
 export const metadata: Metadata = {
   title: "Back Pain | Effective Back Pain Treatment in Sparks, NV",
   description:
-    "Reno Regenerative Medicine provides non-surgical back pain treatment in Reno, NV including spinal decompression, chiropractic care, and joint injections.",
+    "Don't let back aches keep you from living fully. We offer non-surgical care in Sparks to help you move comfortably again. Contact our Sparks clinic today.",
   alternates: { canonical: "https://renoregen.com/conditions/back-pain/" },
 };
 

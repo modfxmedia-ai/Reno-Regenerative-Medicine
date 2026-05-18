@@ -6,14 +6,14 @@ import CTASection from "../components/CTASection";
 import ContactBody from "./ContactBody";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Regenerative Medicine in Sparks & Reno, NV",
+  title: "Contact Us | Pain Management Clinic in Reno, NV",
   description:
-    "Ready to start your healing journey? Reach out to ask about our regenerative therapies in Sparks & Reno, NV. We are here to answer your questions. Call us us!",
+    "Find relief at Reno Regenerative. Explore our Contact Us page to learn how our Reno pain management clinic can help you. Call now!",
   alternates: { canonical: "https://renoregen.com/contact/" },
   openGraph: {
-    title: "Contact Us | Regenerative Medicine in Sparks & Reno, NV",
+    title: "Contact Us | Pain Management Clinic in Reno, NV",
     description:
-      "Ready to start your healing journey? Reach out to ask about our regenerative therapies in Sparks & Reno, NV. We are here to answer your questions. Call us us!",
+      "Find relief at Reno Regenerative. Explore our Contact Us page to learn how our Reno pain management clinic can help you. Call now!",
     url: "https://renoregen.com/contact/",
     type: "website",
   },

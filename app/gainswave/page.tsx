@@ -14,7 +14,7 @@ export const metadata: Metadata = buildMeta({
   slug: `/${SLUG}/`,
   title: "Improve Wellness With GAINSWave\u00ae in Reno, NV",
   description:
-    "GAINSWave\u00ae acoustic wave therapy at Reno Regenerative Medicine improves sexual function and treats erectile dysfunction in Reno, NV. Call (775) 683-9026.",
+    "Learn about GAINSWave therapy. Reno Regenerative is here to listen and help you regain confidence without surgery. Call today for a consultation!",
   image: service.image,
 });
 

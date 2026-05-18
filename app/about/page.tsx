@@ -10,7 +10,7 @@ export const metadata: Metadata = buildMeta({
   slug: "/about/",
   title: "About Reno Regenerative | Pain Management Experts",
   description:
-    "Learn about Reno Regenerative Medicine in Reno, NV — a welcoming integrative medicine clinic offering chiropractic, cold laser therapy, IV therapy, and more.",
+    "Chronic discomfort can feel isolating. Our dedicated staff is here to listen, support you, and help manage your pain without relying on surgery. Reach out!",
 });
 
 export default function AboutPage() {

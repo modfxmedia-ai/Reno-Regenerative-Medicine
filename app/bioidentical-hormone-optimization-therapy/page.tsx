@@ -14,7 +14,7 @@ export const metadata: Metadata = buildMeta({
   slug: `/${SLUG}/`,
   title: "Bioidentical Replacement Hormone Therapy in Reno, NV",
   description:
-    "BHRT at Reno Regenerative Medicine treats hormone imbalances in men and women \u2014 relieving fatigue, low libido, mood swings, and more. Call (775) 683-9026.",
+    "Struggling with fatigue or mood changes? Natural hormone therapy in Reno, NV can make a big difference. Let our friendly team help. Call to book!",
   image: service.image,
 });
 

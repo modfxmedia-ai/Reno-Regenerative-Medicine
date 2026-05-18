@@ -10,7 +10,7 @@ export const metadata: Metadata = buildMeta({
   slug: "/new-patients/",
   title: "New Patient Information",
   description:
-    "New to Reno Regenerative Medicine? Download patient forms, learn what to expect, and call us at (775) 683-9026. We welcome you as part of our extended family.",
+    "Taking the first step toward healing can feel overwhelming. We make becoming a new patient easy and stress-free. Download your forms and book a visit!",
 });
 
 export default function NewPatientsPage() {

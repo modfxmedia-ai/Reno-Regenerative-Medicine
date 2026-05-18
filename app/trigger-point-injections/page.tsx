@@ -14,7 +14,7 @@ export const metadata: Metadata = buildMeta({
   slug: `/${SLUG}/`,
   title: "Relieve Muscle Tension: Trigger Point Injections in Reno, NV",
   description:
-    "Trigger point injections at Reno Regenerative Medicine relieve fibromyalgia, tension headaches, and chronic muscle pain in Reno, NV. Call (775) 683-9026.",
+    "Are tight muscles causing you grief? Our trigger point therapy in Reno, NV offer a direct way to reduce tension and improve comfort. Book an appointment!",
   image: service.image,
 });
 

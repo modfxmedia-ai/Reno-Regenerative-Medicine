@@ -14,7 +14,7 @@ export const metadata: Metadata = buildMeta({
   slug: `/${SLUG}/`,
   title: "Experience Relief With Joint Injections in Reno, NV",
   description:
-    "Joint injections at Reno Regenerative Medicine provide non-surgical pain relief for knee, hip, shoulder, and wrist pain in Reno, NV. Call (775) 683-9026.",
+    "Looking for joint injection treatments in Reno, NV? We provide safe, effective care to reduce swelling and help you move with less pain. Contact us now.",
   image: service.image,
 });
 

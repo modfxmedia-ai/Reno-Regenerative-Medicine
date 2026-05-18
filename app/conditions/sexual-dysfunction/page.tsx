@@ -9,7 +9,7 @@ import ConditionShell from "../../components/ConditionShell";
 export const metadata: Metadata = {
   title: "Restorative Care for Men Experiencing Sexual Dysfunction",
   description:
-    "Reno Regenerative Medicine treats male and female sexual dysfunction in Reno, NV with GAINSWave, hormone therapy, and personalized care. Call (775) 683-9026.",
+    "Intimacy struggles like ED can be deeply frustrating. We use therapies like GAINSWave to improve blood flow and restore confidence. Reach out now.",
   alternates: { canonical: "https://renoregen.com/conditions/sexual-dysfunction/" },
 };
 

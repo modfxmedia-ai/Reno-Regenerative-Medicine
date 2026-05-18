@@ -9,7 +9,7 @@ import ConditionShell from "../../components/ConditionShell";
 export const metadata: Metadata = {
   title: "Neuropathy | Relief From Nerve Pain | Reno Regenerative",
   description:
-    "Reno Regenerative Medicine offers effective neuropathy treatment for tingling, burning, and muscle weakness caused by peripheral nerve damage. Call (775) 683-9026.",
+    "Neuropathy often causes numbness that throws off your balance. Reno Regenerative aims to heal damaged nerves naturally, improving your daily comfort. Visit us!",
   alternates: { canonical: "https://renoregen.com/conditions/neuropathy/" },
 };
 

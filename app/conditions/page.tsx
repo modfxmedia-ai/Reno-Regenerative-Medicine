@@ -10,7 +10,7 @@ export const metadata: Metadata = buildMeta({
   slug: "/conditions/",
   title: "Conditions We Treat at Reno Regenerative | Book Now",
   description:
-    "Reno Regenerative Medicine treats back pain, knee pain, neuropathy, whiplash, joint pain, hormonal imbalance, shoulder pain, and sexual dysfunction in Reno, NV.",
+    "Are you struggling with ongoing pain? Explore the conditions we treat with our natural, holistic methods. Let us help you heal. Book a consultation today.",
 });
 
 export default function ConditionsPage() {

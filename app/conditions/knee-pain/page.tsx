@@ -9,7 +9,7 @@ import ConditionShell from "../../components/ConditionShell";
 export const metadata: Metadata = {
   title: "Knee Pain | Trusted Knee Pain Doctor in Reno, NV",
   description:
-    "Our Reno knee pain doctor treats osteoarthritis, ligament tears, and more with non-surgical joint injections, chiropractic care, and knee decompression.",
+    "Find relief at Reno Regenerative. Explore our Knee Pain page to learn how our Reno pain management clinic can help you. Call now!",
   alternates: { canonical: "https://renoregen.com/conditions/knee-pain/" },
 };
 

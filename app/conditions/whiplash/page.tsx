@@ -9,7 +9,7 @@ import ConditionShell from "../../components/ConditionShell";
 export const metadata: Metadata = {
   title: "Whiplash Therapy Options at Reno Regenerative",
   description:
-    "Reno Regenerative Medicine provides non-surgical whiplash treatment in Reno, NV for neck pain, headaches, and stiffness after car accidents. Call (775) 683-9026.",
+    "Whiplash causes severe tension and limited neck movement. Reno Regenerative provides targeted therapies to reduce swelling and support safe healing. Call today!",
   alternates: { canonical: "https://renoregen.com/conditions/whiplash/" },
 };
 

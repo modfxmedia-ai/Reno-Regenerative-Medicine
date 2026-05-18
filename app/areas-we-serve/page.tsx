@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import PageHero from "@/app/components/PageHero";
 import CTASection from "@/app/components/CTASection";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 import { generateMetadata as buildMetadata } from "@/app/lib/seo";
 import locations from "@/app/lib/pseo/locations";
 import services from "@/app/lib/pseo/services";
@@ -53,29 +55,33 @@ export default function AreasWeServePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
 
-      <PageHero
-        eyebrow="Service Area"
-        title="Areas We Serve"
-        subtitle={`Care for patients across ${locations.length}+ Northern Nevada and Eastern California communities.`}
-        image="/images/services/spinal-decompression.jpg"
-        breadcrumbs={[
-          { label: "Home", href: "/" },
-          { label: "Areas We Serve" },
-        ]}
-        size="md"
-      />
+      <Header />
+      <main>
+        <PageHero
+          eyebrow="Service Area"
+          title="Areas We Serve"
+          subtitle={`Care for patients across ${locations.length}+ Northern Nevada and Eastern California communities.`}
+          image="/images/services/spinal-decompression.jpg"
+          breadcrumbs={[
+            { label: "Home", href: "/" },
+            { label: "Areas We Serve" },
+          ]}
+          size="md"
+        />
 
-      <AreasGrid
-        counties={counties}
-        byCounty={byCounty}
-        services={services}
-        totalLocations={locations.length}
-      />
+        <AreasGrid
+          counties={counties}
+          byCounty={byCounty}
+          services={services}
+          totalLocations={locations.length}
+        />
 
-      <CTASection
-        title="Don't see your city?"
-        subtitle="We welcome patients from across Northern Nevada and Eastern California — call to confirm we serve your area."
-      />
+        <CTASection
+          title="Don't see your city?"
+          subtitle="We welcome patients from across Northern Nevada and Eastern California — call to confirm we serve your area."
+        />
+      </main>
+      <Footer />
     </>
   );
 }

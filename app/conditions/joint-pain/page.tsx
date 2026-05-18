@@ -9,7 +9,7 @@ import ConditionShell from "../../components/ConditionShell";
 export const metadata: Metadata = {
   title: "Natural Joint Pain Relief to Keep You Moving Comfortably",
   description:
-    "Reno Regenerative Medicine treats chronic and acute joint pain in Reno, NV with joint injections, chiropractic care, and therapeutic exercise. Call (775) 683-9026.",
+    "Wear and tear can leave your joints stiff and swollen. Reno Regenerative uses targeted injections to repair tissue and calm inflammation. Call us now!",
   alternates: { canonical: "https://renoregen.com/conditions/joint-pain/" },
 };
 

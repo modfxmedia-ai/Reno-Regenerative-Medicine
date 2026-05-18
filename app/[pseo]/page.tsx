@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import PageHero from "@/app/components/PageHero";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 import {
   getAllSlugs,
   getCombinationBySlug,
@@ -222,26 +224,30 @@ export default async function PseoPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <PageHero
-        title={h1}
-        subtitle={`Serving patients from ${location.city}, ${location.state} and ${location.county} County`}
-        eyebrow={service.shortName}
-        image={DEFAULT_HERO}
-        breadcrumbs={[
-          { label: "Home", href: "/" },
-          { label: service.shortName, href: service.internalPageUrl },
-          { label: `${location.city}, ${location.state}` },
-        ]}
-        size="md"
-      />
+      <Header />
+      <main>
+        <PageHero
+          title={h1}
+          subtitle={`Serving patients from ${location.city}, ${location.state} and ${location.county} County`}
+          eyebrow={service.shortName}
+          image={DEFAULT_HERO}
+          breadcrumbs={[
+            { label: "Home", href: "/" },
+            { label: service.shortName, href: service.internalPageUrl },
+            { label: `${location.city}, ${location.state}` },
+          ]}
+          size="md"
+        />
 
-      <PseoBody
-        h1={h1}
-        intro={intro}
-        service={service}
-        location={location}
-        faqs={faqs}
-      />
+        <PseoBody
+          h1={h1}
+          intro={intro}
+          service={service}
+          location={location}
+          faqs={faqs}
+        />
+      </main>
+      <Footer />
     </>
   );
 }
