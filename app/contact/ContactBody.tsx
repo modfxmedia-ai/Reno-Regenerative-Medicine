@@ -112,7 +112,7 @@ function IntroCardsSection() {
                 <p className="mt-5 text-[11px] font-semibold uppercase tracking-[0.28em] text-[#3d7a52]">
                   {c.label}
                 </p>
-                <p className="mt-2 font-serif-display text-[20px] leading-snug text-[#0a120d]">
+                <p className="mt-2 font-sans font-bold text-[20px] leading-snug text-[#0a120d]">
                   {c.title}
                 </p>
                 <p className="mt-1 text-[13.5px] leading-[1.6] text-[#1a2332]/65">
