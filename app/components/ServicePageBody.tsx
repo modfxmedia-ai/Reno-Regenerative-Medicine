@@ -16,11 +16,11 @@ export type ServicePageBodyProps = {
 /* -------------------------------------------------------------------------- */
 
 const HOURS: { day: string; time: string }[] = [
-  { day: "Mon", time: "8:00 – 5:00" },
-  { day: "Tue", time: "8:00 – 5:00" },
-  { day: "Wed", time: "8:00 – 5:00" },
-  { day: "Thu", time: "8:00 – 5:00" },
-  { day: "Fri", time: "8:00 – 5:00" },
+  { day: "Mon", time: "9:00 – 6:00" },
+  { day: "Tue", time: "9:00 – 6:00" },
+  { day: "Wed", time: "9:00 – 6:00" },
+  { day: "Thu", time: "9:00 – 6:00" },
+  { day: "Fri", time: "Closed" },
   { day: "Sat", time: "Closed" },
   { day: "Sun", time: "Closed" },
 ];

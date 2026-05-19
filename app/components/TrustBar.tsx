@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "20+", label: "Years of Care" },
+  { value: "9", label: "Years of Care" },
   { value: "200+", label: "5-Star Reviews" },
   { value: "15+", label: "Therapies Offered" },
   { value: "On-site", label: "X-ray & Ultrasound" },

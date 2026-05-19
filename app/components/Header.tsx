@@ -66,7 +66,10 @@ const NAV: NavItem[] = [
   {
     label: "Contact",
     href: "/contact",
-    dropdown: [{ label: "Reno Office", href: "/reno-office" }],
+    dropdown: [
+      { label: "Reno Office", href: "/reno-office" },
+      { label: "Fernley Office", href: "https://ascensionhealthnv.com/" },
+    ],
   },
 ];
 
@@ -265,11 +268,15 @@ function DesktopNavItem({ item, pathname }: { item: NavItem; pathname: string })
               {/* Top accent bar */}
               <span aria-hidden className="block h-[3px] w-full bg-gradient-to-r from-[#4a7c59] via-[#c6b180] to-[#4a7c59]" />
               <ul className={`p-3 ${item.grid ? "grid grid-cols-2 gap-x-2 gap-y-0.5" : "space-y-0.5"}`}>
-                {item.dropdown!.map((d) => (
+                {item.dropdown!.map((d) => {
+                  const isExternal = /^https?:\/\//.test(d.href);
+                  return (
                   <li key={d.href} role="none">
                     <Link
                       href={d.href}
                       role="menuitem"
+                      target={isExternal ? "_blank" : undefined}
+                      rel={isExternal ? "noopener noreferrer" : undefined}
                       className="group flex items-center justify-between px-3 py-2.5 rounded-md text-[13px] font-medium text-[#1a2332] hover:bg-[#f6f3ea] hover:text-[#4a7c59] transition-colors"
                     >
                       <span>{d.label}</span>
@@ -278,7 +285,8 @@ function DesktopNavItem({ item, pathname }: { item: NavItem; pathname: string })
                       </span>
                     </Link>
                   </li>
-                ))}
+                  );
+                })}
               </ul>
             </motion.div>
           )}
@@ -402,17 +410,22 @@ function MobileMenu({
                               transition={{ duration: 0.25, ease: "easeOut" }}
                               className="overflow-hidden pb-3"
                             >
-                              {item.dropdown!.map((d) => (
+                              {item.dropdown!.map((d) => {
+                                const isExternal = /^https?:\/\//.test(d.href);
+                                return (
                                 <li key={d.href}>
                                   <Link
                                     href={d.href}
                                     onClick={onClose}
+                                    target={isExternal ? "_blank" : undefined}
+                                    rel={isExternal ? "noopener noreferrer" : undefined}
                                     className="block ml-6 mr-2 px-3 py-2.5 rounded-md text-[13px] text-white/80 hover:bg-white/5 hover:text-[#c6b180] transition-colors"
                                   >
                                     {d.label}
                                   </Link>
                                 </li>
-                              ))}
+                                );
+                              })}
                             </motion.ul>
                           )}
                         </AnimatePresence>

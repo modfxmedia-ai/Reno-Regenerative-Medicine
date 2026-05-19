@@ -344,6 +344,37 @@ function ContactFormSection() {
                     Visit Reno Office
                   </Link>
                 </div>
+
+                <div className="mt-8 rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+                  <span className="inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-[#f3d99a]">
+                    <span aria-hidden className="h-px w-6 bg-[#f3d99a]/70" />
+                    Sister Office
+                  </span>
+                  <p className="mt-3 font-serif-display text-[20px] leading-snug">
+                    Fernley Office &mdash; Ascension Health
+                  </p>
+                  <p className="mt-2 text-[14px] leading-[1.7] text-white/75">
+                    Serving patients in Fernley and Lyon County, NV.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    <a
+                      href="https://ascensionhealthnv.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:bg-white/10"
+                    >
+                      Visit Website
+                    </a>
+                    <a
+                      href="https://g.page/FernleyChiropractor?share"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:bg-white/10"
+                    >
+                      Get Directions
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.aside>

@@ -23,6 +23,7 @@ const PATIENTS = [
 const PRACTICE = [
   { label: "About", href: "/about/" },
   { label: "Reno Office", href: "/reno-office/" },
+  { label: "Fernley Office", href: "https://ascensionhealthnv.com/" },
   { label: "Areas We Serve", href: "/areas-we-serve/" },
   { label: "Contact", href: "/contact/" },
   { label: "Careers", href: "/careers/" },
@@ -77,7 +78,21 @@ export default function Footer() {
             <div>
               <h3 className="text-[11px] uppercase tracking-[0.3em] text-olive mb-5">Practice</h3>
               <ul className="space-y-3 text-sm">
-                {PRACTICE.map((l) => (<li key={l.href}><Link href={l.href} className="hover:text-olive transition-colors">{l.label}</Link></li>))}
+                {PRACTICE.map((l) => {
+                  const isExternal = /^https?:\/\//.test(l.href);
+                  return (
+                    <li key={l.href}>
+                      <Link
+                        href={l.href}
+                        target={isExternal ? "_blank" : undefined}
+                        rel={isExternal ? "noopener noreferrer" : undefined}
+                        className="hover:text-olive transition-colors"
+                      >
+                        {l.label}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
@@ -90,7 +105,17 @@ export default function Footer() {
             <li><Link href="/accessibility/" className="hover:text-olive transition-colors">Accessibility</Link></li>
             <li><Link href="/sitemap/" className="hover:text-olive transition-colors">Sitemap</Link></li>
           </ul>
-          <p>Website by DOCTOR Multimedia</p>
+          <p>
+            Website by{" "}
+            <a
+              href="https://modfxmedia.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-olive transition-colors"
+            >
+              ModFXMedia
+            </a>
+          </p>
         </div>
       </div>
     </footer>
