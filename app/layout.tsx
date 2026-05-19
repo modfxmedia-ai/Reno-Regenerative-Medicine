@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 const sans = Inter({
   variable: "--font-sans-ui",
@@ -56,6 +58,9 @@ export default function RootLayout({
         className="min-h-full flex flex-col bg-white text-ink"
         suppressHydrationWarning
       >
+        <Suspense fallback={null}>
+          <ScrollToTop />
+        </Suspense>
         {children}
       </body>
     </html>
