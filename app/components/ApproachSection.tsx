@@ -102,10 +102,10 @@ export default function ApproachSection() {
                   <div className="font-serif-display text-[18px] text-[#c6b180]">
                     {p.n}
                   </div>
-                  <div className="mt-3 font-semibold text-[15px] text-[#1a2332]">
+                  <div className="mt-3 font-semibold text-[17px] text-[#1a2332]">
                     {p.t}
                   </div>
-                  <div className="mt-2 text-[13px] leading-relaxed text-[#1a2332]/65">
+                  <div className="mt-2 text-[15px] leading-[1.65] text-[#1a2332]/75">
                     {p.d}
                   </div>
                 </motion.div>

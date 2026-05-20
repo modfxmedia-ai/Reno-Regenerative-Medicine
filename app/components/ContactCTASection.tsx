@@ -4,11 +4,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const HOURS: { day: string; time: string }[] = [
-  { day: "Monday", time: "8:00 – 5:00" },
-  { day: "Tuesday", time: "8:00 – 5:00" },
-  { day: "Wednesday", time: "8:00 – 5:00" },
-  { day: "Thursday", time: "8:00 – 5:00" },
-  { day: "Friday", time: "8:00 – 5:00" },
+  { day: "Monday", time: "9:00 am – 6:00 pm" },
+  { day: "Tuesday", time: "9:00 am – 6:00 pm" },
+  { day: "Wednesday", time: "9:00 am – 6:00 pm" },
+  { day: "Thursday", time: "9:00 am – 6:00 pm" },
+  { day: "Friday", time: "Closed" },
   { day: "Saturday", time: "Closed" },
   { day: "Sunday", time: "Closed" },
 ];
@@ -158,7 +158,7 @@ export default function ContactCTASection() {
             >
               (775) 683-9026
             </a>
-            <p className="mt-3 text-white/60">Free 20-min consultation available</p>
+            <p className="mt-3 text-white/60">Free consultation available</p>
 
             <div className="mt-10">
               <div className="text-xs uppercase tracking-[0.3em] text-[#c6b180]">Address</div>

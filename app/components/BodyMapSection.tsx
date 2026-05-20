@@ -299,7 +299,7 @@ export default function BodyMapSection() {
             Book a Consultation
           </Link>
           <span className="text-sm text-white/55">
-            Free 20-min consultation available
+            Free consultation available
           </span>
         </FadeIn>
       </div>

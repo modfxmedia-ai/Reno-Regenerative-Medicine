@@ -130,7 +130,7 @@ export default function Testimonials() {
             </div>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-md px-5 py-4 text-center">
-            <div className="font-serif-display text-3xl text-[#c6b180]">N. NV</div>
+            <div className="font-serif-display text-3xl text-[#c6b180]">9+</div>
             <div className="mt-1.5 text-[10px] uppercase tracking-[0.25em] text-white/60">
               Years of Healing
             </div>

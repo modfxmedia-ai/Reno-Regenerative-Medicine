@@ -19,7 +19,6 @@ export default function NewPatientsPage() {
       <Header />
       <main>
         <PageHero
-          eyebrow="New Patients"
           title="New Patient Information"
           image="/images/services/physical-therapy.jpg"
           imageAlt="Welcoming the next patient to Reno Regenerative Medicine"
