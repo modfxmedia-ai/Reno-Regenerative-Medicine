@@ -182,10 +182,10 @@ function ContactFormSection() {
               Send a Message
             </span>
             <h2 className="mt-4 font-serif-display text-[34px] sm:text-[42px] leading-[1.08] tracking-tight text-[#0a120d]">
-              Tell us how we can help.
+              Request An Appointment Today
             </h2>
             <p className="mt-4 text-[15.5px] leading-[1.7] text-[#1a2332]/70">
-              Share a few details about what you&apos;re experiencing and our team will follow up to schedule a consultation.
+              Share a few details below and our team will follow up to confirm a convenient time for your visit.
             </p>
 
             {submitted ? (
@@ -208,66 +208,84 @@ function ContactFormSection() {
                     <span className="mb-2 block text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332]/70">
                       First Name
                     </span>
-                    <input required name="first" type="text" className={inputCls} placeholder="Jane" />
+                    <input name="first" type="text" className={inputCls} placeholder="First Name" />
                   </label>
                   <label className="block">
                     <span className="mb-2 block text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332]/70">
                       Last Name
                     </span>
-                    <input required name="last" type="text" className={inputCls} placeholder="Doe" />
+                    <input name="last" type="text" className={inputCls} placeholder="Last Name" />
                   </label>
                 </div>
 
                 <div className="grid gap-5 sm:grid-cols-2">
                   <label className="block">
                     <span className="mb-2 block text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332]/70">
-                      Email
+                      Phone <span className="text-[#3d7a52]">*</span>
                     </span>
-                    <input required name="email" type="email" className={inputCls} placeholder="you@example.com" />
+                    <input required name="phone" type="tel" className={inputCls} placeholder="Phone" />
                   </label>
                   <label className="block">
                     <span className="mb-2 block text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332]/70">
-                      Phone
+                      Email <span className="text-[#3d7a52]">*</span>
                     </span>
-                    <input name="phone" type="tel" className={inputCls} placeholder="(775) 555-0123" />
+                    <div className="relative">
+                      <svg
+                        aria-hidden
+                        viewBox="0 0 24 24"
+                        width="16"
+                        height="16"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.8"
+                        className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[#1a2332]/40"
+                      >
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <path d="m3 7 9 6 9-6" />
+                      </svg>
+                      <input
+                        required
+                        name="email"
+                        type="email"
+                        className={`${inputCls} pl-11`}
+                        placeholder="Email"
+                      />
+                    </div>
                   </label>
                 </div>
 
                 <label className="block">
                   <span className="mb-2 block text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332]/70">
-                    What can we help with?
+                    Insurance Provider
                   </span>
-                  <select name="topic" className={inputCls}>
-                    <option>General question</option>
-                    <option>Joint Injections</option>
-                    <option>Trigger Point Injections</option>
-                    <option>Therapeutic Exercise</option>
-                    <option>Chiropractic Care</option>
-                    <option>Nutritional IVs</option>
-                    <option>Bioidentical Hormones</option>
-                    <option>Spinal Decompression</option>
-                    <option>GAINSwave</option>
-                    <option>Knee Decompression</option>
-                  </select>
+                  <input name="insurance" type="text" className={inputCls} />
                 </label>
 
                 <label className="block">
                   <span className="mb-2 block text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332]/70">
                     Message
                   </span>
-                  <textarea required name="message" rows={5} className={inputCls} placeholder="Tell us about your symptoms or questions." />
+                  <textarea name="message" rows={4} className={inputCls} />
                 </label>
 
-                <p className="text-[12.5px] leading-[1.6] text-[#1a2332]/55">
-                  By submitting, you agree to be contacted by Reno Regenerative Medicine. Please do not include sensitive medical information.
-                </p>
+                <label className="flex items-start gap-3 rounded-2xl bg-[#f6f3ea]/60 p-4 ring-1 ring-[#e8e4d9]">
+                  <input
+                    required
+                    type="checkbox"
+                    name="consent"
+                    className="mt-1 h-4 w-4 flex-none accent-[#3d7a52]"
+                  />
+                  <span className="text-[12.5px] leading-[1.6] text-[#1a2332]/75">
+                    Reno Regenerative Medicine is committed to protecting and respecting your privacy, and we&rsquo;ll only use your personal information to administer your account and to provide the products and services you requested from us. I consent to receive SMS notifications, alerts &amp; occasional marketing communication from company. Message frequency varies. Message &amp; data rates may apply. Text HELP to (775) 204-3533 for assistance. You can reply STOP to unsubscribe at any time.
+                  </span>
+                </label>
 
                 <div>
                   <button
                     type="submit"
-                    className="inline-flex items-center gap-2 rounded-full bg-[#c6b180] px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.22em] text-[#0a120d] transition-colors hover:bg-[#f3d99a]"
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#4a7c59] to-[#3d7a52] px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.22em] text-white shadow-[0_18px_40px_-18px_rgba(74,124,89,0.85)] transition-colors hover:from-[#3d7a52] hover:to-[#2e5e3f] sm:w-auto"
                   >
-                    Send Message
+                    Submit
                     <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden>
                       <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
