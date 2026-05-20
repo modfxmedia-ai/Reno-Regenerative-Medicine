@@ -16,7 +16,7 @@ const SUBHEADING =
 
 const EXACT_PARAGRAPHS = [
   "Reno Regenerative Medicine in Reno, Nevada, offers a welcoming and relaxed environment for an innovative and multidisciplinary approach. The team offers innovative medicine and a variety of therapies, including chiropractic, therapeutic exercise and cold laser therapy, to help patients suffering from sciatica, symptoms associated with neuropathy, arthritis, whiplash, and musculoskeletal pain.",
-  "The Reno Regenerative Medicine team uses the best products available. Our services are complemented by advanced technologies for efficient and effective treatments that can relieve pain and help speed up the healing process. Reno Regenerative Medicine also has state of the art X-ray equipment and ultrasound on-site for efficient diagnosis, so patients are fully informed about their condition before beginning treatment.",
+  "The Reno Regenerative Medicine team uses the best products available. Our services are complemented by advanced technologies for efficient and effective treatments that can relieve pain and help speed up the healing process. Reno Regenerative Medicine also has state of the art X-ray equipment on-site for efficient diagnosis, so patients are fully informed about their condition before beginning treatment.",
   "The team appreciate that every patient has individualized needs and concerns and adapts all of their treatment plans to address the uniqueness of each patient. Their treatment approach focuses on relieving pain and improving physical function for better overall health and well-being. The team provides effective hands-on care and innovative medicine services that can help patients who want to avoid taking medications or having surgery.",
   "To learn more about care at Reno Regenerative Medicine, call or request an appointment now.",
 ];
@@ -175,7 +175,7 @@ function MainContentSection() {
 const REASONS = [
   {
     title: "State-of-the-Art Imaging",
-    body: "On-site X-ray and ultrasound for accurate diagnosis.",
+    body: "On-site X-ray for accurate diagnosis.",
     icon: (
       <>
         <rect x="3" y="5" width="18" height="14" rx="2" />

@@ -227,7 +227,7 @@ const FAQ = [
   },
   {
     q: "How long will my first appointment take?",
-    a: "Your first visit includes a thorough consultation, exam, any needed on-site X-ray or ultrasound imaging, and time to discuss a personalized plan with our team. We never rush — we take whatever time is needed to fully understand your condition and answer your questions.",
+    a: "Your first visit includes a thorough consultation, exam, any needed on-site X-ray imaging, and time to discuss a personalized plan with our team. We never rush — we take whatever time is needed to fully understand your condition and answer your questions.",
   },
   {
     q: "What conditions do you treat?",

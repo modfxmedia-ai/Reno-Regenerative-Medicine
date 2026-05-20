@@ -7,7 +7,7 @@ import FadeIn from "./FadeIn";
 const POINTS: { title: string; desc: string }[] = [
   { title: "Root-Cause Focus", desc: "We look beyond symptoms to identify and treat the underlying source of your pain or imbalance." },
   { title: "Integrative Medicine", desc: "Chiropractic, therapeutic exercise, cold laser, IV nutrition and regenerative therapies — all under one roof." },
-  { title: "Advanced Diagnostics", desc: "On-site X-ray and ultrasound mean a clear, informed picture of your condition before treatment begins." },
+  { title: "Advanced Diagnostics", desc: "On-site X-ray imaging means a clear, informed picture of your condition before treatment begins." },
   { title: "Personalized Plans", desc: "Every patient is unique. Treatment plans are tailored to your body, history and goals." },
   { title: "Trusted in Northern Nevada", desc: "201 Google reviews, a 4.8★ average and patients across Northern NV and surrounding California communities." },
   { title: "Welcoming Environment", desc: "A relaxed, compassionate clinic where new patients are treated like family from day one." },

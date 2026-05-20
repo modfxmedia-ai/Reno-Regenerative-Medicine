@@ -8,7 +8,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const credentials = [
   "Integrative & Regenerative Medicine",
   "Chiropractic & Therapeutic Exercise",
-  "On-site X-ray & Ultrasound Imaging",
+  "On-site X-ray Imaging",
   "Cold Laser & Joint Injection Specialist",
 ];
 

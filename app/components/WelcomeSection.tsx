@@ -32,9 +32,9 @@ export default function WelcomeSection() {
               available. Our services are complemented by advanced technologies
               for efficient and effective treatments that can relieve pain and
               help speed up the healing process. Reno Regenerative Medicine also
-              has state of the art X-ray equipment and ultrasound on-site for
-              efficient diagnosis, so patients are fully informed about their
-              condition before beginning treatment.
+              has state of the art X-ray equipment on-site for efficient
+              diagnosis, so patients are fully informed about their condition
+              before beginning treatment.
             </p>
             <p>
               The team appreciate that every patient has individualized needs and

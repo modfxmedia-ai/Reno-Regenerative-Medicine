@@ -9,7 +9,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const STATS = [
   { value: "9", label: "Years of care" },
   { value: "4.8★", label: "200+ Google reviews" },
-  { value: "On-site", label: "X-ray & ultrasound" },
+  { value: "On-site", label: "X-ray imaging" },
   { value: "Same-week", label: "New patient visits" },
 ];
 

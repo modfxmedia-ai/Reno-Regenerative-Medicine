@@ -20,7 +20,7 @@ const pillars = [
   {
     n: "03",
     t: "On-site Imaging",
-    d: "State of the art X-ray equipment and ultrasound on-site for efficient diagnosis.",
+    d: "State of the art X-ray equipment on-site for efficient diagnosis.",
   },
 ];
 
@@ -84,9 +84,9 @@ export default function ApproachSection() {
               available. Our services are complemented by advanced technologies
               for efficient and effective treatments that can relieve pain and
               help speed up the healing process. Reno Regenerative Medicine
-              also has state of the art X-ray equipment and ultrasound on-site
-              for efficient diagnosis, so patients are fully informed about
-              their condition before beginning treatment.
+              also has state of the art X-ray equipment on-site for efficient
+              diagnosis, so patients are fully informed about their condition
+              before beginning treatment.
             </motion.p>
 
             <div className="grid sm:grid-cols-3 gap-5 pt-6">

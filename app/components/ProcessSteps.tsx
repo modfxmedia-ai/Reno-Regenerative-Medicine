@@ -32,7 +32,7 @@ const steps: Step[] = [
   {
     n: "02",
     t: "Confident on-site diagnosis",
-    d: "State of the art X-ray and ultrasound on-site means you&rsquo;re fully informed about your condition before treatment begins.",
+    d: "State of the art X-ray imaging on-site means you&rsquo;re fully informed about your condition before treatment begins.",
     glowFrom: "#4a7c59",
     glowTo: "#1f3a28",
     icon: (
