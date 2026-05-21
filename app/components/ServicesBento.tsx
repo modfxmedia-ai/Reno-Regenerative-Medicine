@@ -61,8 +61,8 @@ const tiles: Tile[] = [
     span: "lg:col-span-3",
   },
   {
-    href: "/gainswave/",
-    title: "GAINSWave\u00ae",
+    href: "/ed-shockwave-therapy/",
+    title: "ED Shockwave Therapy",
     blurb: "Acoustic-wave therapy for sexual health & circulation.",
     image: "/images/services/gainswave.jpg",
     span: "lg:col-span-3",

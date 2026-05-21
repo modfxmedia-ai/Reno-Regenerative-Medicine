@@ -63,7 +63,7 @@ const SERVICE_SLUGS = [
   "/spinal-decompression/",
   "/nutritional-ivs/",
   "/bioidentical-hormone-optimization-therapy/",
-  "/gainswave/",
+  "/ed-shockwave-therapy/",
   "/services/knee-decompression/",
 ];
 

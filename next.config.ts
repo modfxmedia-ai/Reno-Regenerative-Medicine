@@ -26,8 +26,10 @@ const nextConfig: NextConfig = {
       { source: "/services/spinal-decompression/", destination: "/spinal-decompression/", permanent: true },
       { source: "/services/bioidentical-hormones", destination: "/bioidentical-hormone-optimization-therapy/", permanent: true },
       { source: "/services/bioidentical-hormones/", destination: "/bioidentical-hormone-optimization-therapy/", permanent: true },
-      { source: "/services/gainswave", destination: "/gainswave/", permanent: true },
-      { source: "/services/gainswave/", destination: "/gainswave/", permanent: true },
+      { source: "/services/gainswave", destination: "/ed-shockwave-therapy/", permanent: true },
+      { source: "/services/gainswave/", destination: "/ed-shockwave-therapy/", permanent: true },
+      { source: "/gainswave", destination: "/ed-shockwave-therapy/", permanent: true },
+      { source: "/gainswave/", destination: "/ed-shockwave-therapy/", permanent: true },
       { source: "/services/chiropractic-care", destination: "/chiropractic-care/", permanent: true },
       { source: "/services/chiropractic-care/", destination: "/chiropractic-care/", permanent: true },
 

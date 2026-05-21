@@ -273,7 +273,7 @@ function ServicesOverviewSection() {
     "spinal-decompression",
     "nutritional-ivs",
     "bioidentical-hormone-optimization-therapy",
-    "gainswave",
+    "ed-shockwave-therapy",
     "trigger-point-injections",
     "physical-therapy",
   ];

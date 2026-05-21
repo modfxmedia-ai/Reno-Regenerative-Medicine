@@ -215,19 +215,19 @@ const services: PseoService[] = [
   },
   {
     slug: "gainswave-therapy",
-    name: "GAINSWave® Therapy",
-    shortName: "GAINSWave",
-    internalPageUrl: "/gainswave/",
-    h1Template: "GAINSWave® Therapy Near {city}, {state}",
-    metaTitle: "GAINSWave® Therapy Near {city}, {state} | Reno Regenerative Medicine",
+    name: "ED Shockwave Therapy",
+    shortName: "ED Shockwave",
+    internalPageUrl: "/ed-shockwave-therapy/",
+    h1Template: "ED Shockwave Therapy Near {city}, {state}",
+    metaTitle: "ED Shockwave Therapy Near {city}, {state} | Reno Regenerative Medicine",
     metaDesc:
-      "GAINSWave® acoustic wave therapy for men near {city}, {state}. Non-surgical ED treatment and sexual wellness at Reno Regenerative Medicine. Call (775) 683-9026.",
+      "ED shockwave therapy for men near {city}, {state}. Non-surgical erectile dysfunction treatment and sexual wellness at Reno Regenerative Medicine. Call (775) 683-9026.",
     intro:
-      "Reno Regenerative Medicine offers GAINSWave® acoustic wave therapy for men from {city}, {state} and {county} County. This non-invasive treatment uses low-intensity sound waves to improve blood flow, treat erectile dysfunction, and enhance sexual performance — with no medication and no downtime.",
-    treatments: ["GAINSWave® Acoustic Wave Therapy"],
+      "Reno Regenerative Medicine offers ED shockwave therapy for men from {city}, {state} and {county} County. This non-invasive acoustic wave treatment uses low-intensity sound waves to improve blood flow, treat erectile dysfunction, and enhance sexual performance — with no medication and no downtime.",
+    treatments: ["ED Shockwave (Acoustic Wave) Therapy"],
     conditions: ["Erectile Dysfunction", "Peyronie's Disease", "Sexual Dysfunction", "Reduced Sexual Performance"],
     gscKeywords: [
-      "gainswave near me",
+      "ed shockwave therapy near me",
       "ed treatment near me",
       "erectile dysfunction treatment near me",
       "acoustic wave therapy near me",

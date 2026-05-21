@@ -32,7 +32,7 @@ const REVIEWS: Review[] = [
   {
     author: "John Thom",
     body:
-      "Reno regenerative has been great, making me feel welcome at every visit. The staff are very kind and polite. I\u2019m extremely happy with the results I\u2019ve gotten with the gainswave treatment.",
+      "Reno regenerative has been great, making me feel welcome at every visit. The staff are very kind and polite. I\u2019m extremely happy with the results I\u2019ve gotten with the shockwave treatment.",
   },
   {
     author: "Lg",

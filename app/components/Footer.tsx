@@ -8,7 +8,7 @@ const SERVICES = [
   { label: "Chiropractic Care", href: "/chiropractic-care/" },
   { label: "Nutritional IV's", href: "/nutritional-ivs/" },
   { label: "Bioidentical Hormones", href: "/bioidentical-hormone-optimization-therapy/" },
-  { label: "GAINSwave™", href: "/gainswave/" },
+  { label: "ED Shockwave Therapy", href: "/ed-shockwave-therapy/" },
 ];
 
 const PATIENTS = [

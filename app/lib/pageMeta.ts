@@ -199,10 +199,10 @@ export const PAGES: PageMeta[] = [
     priority: 0.9,
   },
   {
-    slug: "/gainswave/",
-    title: "Improve Wellness With GAINSWave® in Reno, NV",
+    slug: "/ed-shockwave-therapy/",
+    title: "Erectile Dysfunction Shockwave Treatment in Reno, NV",
     description:
-      "Learn about GAINSWave therapy. Reno Regenerative is here to listen and help you regain confidence without surgery. Call today for a consultation!",
+      "Non-invasive ED shockwave therapy at Reno Regenerative Medicine uses acoustic waves to improve blood flow and restore sexual function. Call today for a consultation!",
     priority: 0.9,
   },
   {
@@ -301,7 +301,7 @@ export const PAGES: PageMeta[] = [
     slug: "/conditions/sexual-dysfunction/",
     title: "Restorative Care for Men Experiencing Sexual Dysfunction",
     description:
-      "Intimacy struggles like ED can be deeply frustrating. We use therapies like GAINSWave to improve blood flow and restore confidence. Reach out now.",
+      "Intimacy struggles like ED can be deeply frustrating. We use therapies like ED shockwave therapy to improve blood flow and restore confidence. Reach out now.",
     priority: 0.8,
   },
 ];

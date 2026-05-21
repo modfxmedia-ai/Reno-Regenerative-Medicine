@@ -32,7 +32,7 @@ const NAV: NavItem[] = [
       { label: "Nutritional IVs", href: "/nutritional-ivs/" },
       { label: "Spinal Decompression", href: "/spinal-decompression/" },
       { label: "Bioidentical Hormones", href: "/bioidentical-hormone-optimization-therapy/" },
-      { label: "GAINSWave\u00ae", href: "/gainswave/" },
+      { label: "ED Shockwave Therapy", href: "/ed-shockwave-therapy/" },
       { label: "Chiropractic Care", href: "/chiropractic-care/" },
       { label: "Knee Decompression", href: "/services/knee-decompression/" },
     ],

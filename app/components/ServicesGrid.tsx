@@ -12,7 +12,7 @@ const SERVICES = [
   { name: "Nutritional IV's", cat: "Wellness", desc: "Vitamin and nutrient infusions to support energy and recovery.", href: "/nutritional-ivs/" },
   { name: "Bioidentical Hormones", cat: "Hormone Health", desc: "Personalized hormone therapy to restore balance and vitality.", href: "/bioidentical-hormone-optimization-therapy/" },
   { name: "Spinal Decompression", cat: "Back", desc: "Non-surgical relief for disc-related back and neck pain.", href: "/spinal-decompression/" },
-  { name: "GAINSwave™", cat: "Men's Health", desc: "Acoustic wave therapy supporting performance and circulation.", href: "/gainswave/" },
+  { name: "ED Shockwave Therapy", cat: "Men's Health", desc: "Acoustic wave therapy supporting performance and circulation.", href: "/ed-shockwave-therapy/" },
   { name: "Back & Knee Decompression", cat: "Joint", desc: "Decompression therapies that ease knee and lower back pain.", href: "/services/knee-decompression/" },
 ];
 

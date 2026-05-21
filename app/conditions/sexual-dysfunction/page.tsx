@@ -9,7 +9,7 @@ import ConditionShell from "../../components/ConditionShell";
 export const metadata: Metadata = {
   title: "Restorative Care for Men Experiencing Sexual Dysfunction",
   description:
-    "Intimacy struggles like ED can be deeply frustrating. We use therapies like GAINSWave to improve blood flow and restore confidence. Reach out now.",
+    "Intimacy struggles like ED can be deeply frustrating. We use therapies like ED shockwave therapy to improve blood flow and restore confidence. Reach out now.",
   alternates: { canonical: "https://renoregen.com/conditions/sexual-dysfunction/" },
 };
 
@@ -25,7 +25,7 @@ const PROSE =
   "[&>*:first-child]:mt-0";
 
 const OPTIONS: { name: string; href: string; copy: string }[] = [
-  { name: "GAINSWave\u00ae", href: "/gainswave/", copy: "Acoustic wave therapy that improves blood flow and sexual function for men." },
+  { name: "ED Shockwave Therapy", href: "/ed-shockwave-therapy/", copy: "Acoustic wave therapy that improves blood flow and sexual function for men." },
   { name: "Bioidentical Hormones", href: "/bioidentical-hormone-optimization-therapy/", copy: "Restore healthy testosterone, estrogen, and progesterone levels with BHRT." },
   { name: "Hormone Optimization", href: "/conditions/hormonal-imbalance/", copy: "A whole-body approach to balancing the hormones behind libido and intimacy." },
 ];
@@ -118,7 +118,7 @@ export default function Page() {
               <li>Hormone therapy: Low levels of testosterone raised by hormone replacement therapies that include injections, patches or gels.</li>
               <li>Psychological therapy: A psychological counselor to help you address feelings of anxiety, depression, fear or guilt that may affect sexual function.</li>
               <li>Mechanical aids: Vacuum devices and penile implants that can help some men with erectile dysfunction.</li>
-              <li>Gainswave Therapy</li>
+              <li>ED Shockwave Therapy</li>
               <li>PShot</li>
             </ul>
 

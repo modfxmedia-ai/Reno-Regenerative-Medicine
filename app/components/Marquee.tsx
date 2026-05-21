@@ -10,7 +10,7 @@ const ITEMS = [
   "Nutritional IV's",
   "Bioidentical Hormones",
   "Spinal Decompression",
-  "GAINSwave™",
+  "ED Shockwave Therapy",
   "Knee Decompression",
 ];
 

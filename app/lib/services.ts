@@ -20,7 +20,7 @@ export type ServiceSlug =
   | "spinal-decompression"
   | "nutritional-ivs"
   | "bioidentical-hormone-optimization-therapy"
-  | "gainswave"
+  | "ed-shockwave-therapy"
   | "knee-decompression"
   | "physical-therapy";
 
@@ -354,21 +354,21 @@ export const SERVICES: ServiceData[] = [
   },
   /* ------------------------------------------------------------------ */
   {
-    slug: "gainswave",
-    href: "/gainswave/",
-    name: "GAINSWave®",
-    label: "GAINSWave® Therapy",
+    slug: "ed-shockwave-therapy",
+    href: "/ed-shockwave-therapy/",
+    name: "ED Shockwave Therapy",
+    label: "ED Shockwave Therapy",
     short:
       "Acoustic wave therapy that improves blood flow and sexual function — non-invasive and drug-free.",
-    title: "Improve Wellness With GAINSWave® in Reno, NV",
+    title: "Erectile Dysfunction Shockwave Treatment in Reno, NV",
     description:
-      "GAINSWave acoustic wave therapy at Reno Regenerative Medicine improves sexual function and treats erectile dysfunction in Reno, NV.",
+      "ED shockwave therapy at Reno Regenerative Medicine uses acoustic waves to improve sexual function and treat erectile dysfunction in Reno, NV.",
     image: "/images/services/gainswave.jpg",
     sections: [
       {
-        heading: "What is GAINSWave®?",
+        heading: "What is ED shockwave therapy?",
         paragraphs: [
-          "GAINSWave® uses low-intensity sound waves — known as acoustic wave therapy — to increase blood flow to the penis and improve sexual function.",
+          "ED shockwave therapy uses low-intensity sound waves — known as acoustic wave therapy — to increase blood flow to the penis and improve sexual function.",
           "It is most often used to support patients with erectile dysfunction and Peyronie's disease.",
         ],
       },
@@ -387,7 +387,7 @@ export const SERVICES: ServiceData[] = [
       },
     ],
     howItWorks: [
-      { n: "01", title: "Discreet consultation", body: "A private conversation to understand your goals and confirm GAINSWave is right for you." },
+      { n: "01", title: "Discreet consultation", body: "A private conversation to understand your goals and confirm shockwave therapy is right for you." },
       { n: "02", title: "Series of short sessions", body: "Most patients complete 6–12 sessions of 15–20 minutes each." },
       { n: "03", title: "Improved blood flow & function", body: "New vascular growth supports lasting improvements over time." },
     ],

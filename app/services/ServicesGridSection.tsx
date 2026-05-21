@@ -24,7 +24,7 @@ const SERVICE_ORDER: { slug: string; label: string }[] = [
   { slug: "nutritional-ivs", label: "Nutritional IV\u2019s" },
   { slug: "bioidentical-hormone-optimization-therapy", label: "Bioidentical Hormones" },
   { slug: "spinal-decompression", label: "Spinal Decompression" },
-  { slug: "gainswave", label: "GAINSwave\u2122" },
+  { slug: "ed-shockwave-therapy", label: "ED Shockwave Therapy" },
   { slug: "knee-decompression", label: "Knee Decompression" },
 ];
 
