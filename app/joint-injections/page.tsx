@@ -6,6 +6,12 @@ import CTASection from "../components/CTASection";
 import JointInjectionsBody from "./JointInjectionsBody";
 import { generateMetadata as buildMeta } from "../lib/seo";
 import { SERVICES_BY_SLUG } from "../lib/services";
+import JsonLd from "../components/JsonLd";
+import {
+  buildServiceSchema,
+  buildServiceOfferingSchema,
+  buildServiceBreadcrumbSchema,
+} from "../lib/jsonLd";
 
 const SLUG = "joint-injections" as const;
 const service = SERVICES_BY_SLUG[SLUG];
@@ -21,6 +27,13 @@ export const metadata: Metadata = buildMeta({
 export default function Page() {
   return (
     <>
+      <JsonLd
+        schema={[
+          buildServiceSchema(SLUG),
+          buildServiceOfferingSchema(SLUG),
+          buildServiceBreadcrumbSchema(SLUG),
+        ]}
+      />
       <Header />
       <main>
         <PageHero

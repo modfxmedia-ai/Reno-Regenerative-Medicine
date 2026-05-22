@@ -3,7 +3,6 @@ import { PAGES, type PageMeta } from "./pageMeta";
 
 const SITE_URL = "https://renoregen.com";
 const BRAND = "Reno Regenerative Medicine";
-const DEFAULT_OG_IMAGE = "/images/og-default.jpg";
 
 export type GenerateMetadataInput = {
   /** Page slug, e.g. "/about/" — used to look up PAGES and build canonical URL. */
@@ -12,7 +11,11 @@ export type GenerateMetadataInput = {
   title?: string;
   /** Override the description. */
   description?: string;
-  /** Optional OG image path relative to public/. */
+  /**
+   * Optional OG image path (relative to /public or absolute URL). When omitted,
+   * Next.js falls back to the route's `opengraph-image` file convention
+   * (see `app/opengraph-image.tsx`).
+   */
   image?: string;
   /** Mark page noindex (e.g. thank-you, internal). */
   noIndex?: boolean;
@@ -53,8 +56,12 @@ export function generateMetadata(input: GenerateMetadataInput): Metadata {
     "Integrative & regenerative medicine in Reno, NV — natural relief for chronic pain.";
 
   const canonical = `${SITE_URL}${slug}`;
-  const image = input.image ?? DEFAULT_OG_IMAGE;
-  const ogImage = image.startsWith("http") ? image : `${SITE_URL}${image}`;
+  const hasImage = Boolean(input.image);
+  const ogImage = hasImage
+    ? input.image!.startsWith("http")
+      ? input.image!
+      : `${SITE_URL}${input.image!}`
+    : undefined;
 
   // OG/Twitter titles do not get the layout template applied automatically,
   // so include the brand suffix here (avoiding doubling for absolute titles).
@@ -75,13 +82,17 @@ export function generateMetadata(input: GenerateMetadataInput): Metadata {
       siteName: BRAND,
       type: "website",
       locale: "en_US",
-      images: [{ url: ogImage, width: 1200, height: 630, alt: ogTitle }],
+      // When no explicit image is supplied, omit `images` so Next.js inherits
+      // the route's opengraph-image.tsx (1200×630 PNG generated at build time).
+      ...(ogImage
+        ? { images: [{ url: ogImage, width: 1200, height: 630, alt: ogTitle }] }
+        : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: ogTitle,
       description,
-      images: [ogImage],
+      ...(ogImage ? { images: [ogImage] } : {}),
     },
   };
 }

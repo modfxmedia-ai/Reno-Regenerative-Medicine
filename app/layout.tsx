@@ -3,6 +3,8 @@ import { Inter, Playfair_Display } from "next/font/google";
 import { Suspense } from "react";
 import "./globals.css";
 import ScrollToTop from "./components/ScrollToTop";
+import JsonLd from "./components/JsonLd";
+import { buildMedicalBusinessSchema } from "./lib/jsonLd";
 
 const sans = Inter({
   variable: "--font-sans-ui",
@@ -58,6 +60,7 @@ export default function RootLayout({
         className="min-h-full flex flex-col bg-white text-ink"
         suppressHydrationWarning
       >
+        <JsonLd schema={buildMedicalBusinessSchema()} />
         <Suspense fallback={null}>
           <ScrollToTop />
         </Suspense>

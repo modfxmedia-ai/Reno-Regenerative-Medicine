@@ -7,6 +7,12 @@ import ServicePageBody from "../../components/ServicePageBody";
 import KneeDecompressionExtras from "./KneeDecompressionExtras";
 import { generateMetadata as buildMeta } from "../../lib/seo";
 import { SERVICES_BY_SLUG, getRelatedServices } from "../../lib/services";
+import JsonLd from "../../components/JsonLd";
+import {
+  buildServiceSchema,
+  buildServiceOfferingSchema,
+  SITE_URL,
+} from "../../lib/jsonLd";
 
 const SLUG = "knee-decompression" as const;
 const service = SERVICES_BY_SLUG[SLUG];
@@ -20,9 +26,36 @@ export const metadata: Metadata = buildMeta({
   image: service.image,
 });
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Services",
+      item: `${SITE_URL}/services/`,
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: service.name,
+      item: `${SITE_URL}/services/${SLUG}/`,
+    },
+  ],
+};
+
 export default function Page() {
   return (
     <>
+      <JsonLd
+        schema={[
+          buildServiceSchema(SLUG),
+          buildServiceOfferingSchema(SLUG),
+          breadcrumbSchema,
+        ]}
+      />
       <Header />
       <main>
         <PageHero
