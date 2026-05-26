@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Script from "next/script";
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -10,165 +10,52 @@ const ease = [0.22, 1, 0.36, 1] as const;
 /*  Appointments form + office card                                   */
 /* ================================================================== */
 export default function AppointmentsBody() {
-  const [submitted, setSubmitted] = useState(false);
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    
-    const formData = new FormData(e.currentTarget);
-    const payload = {
-      firstName: formData.get("first") as string,
-      lastName: formData.get("last") as string,
-      phone: formData.get("phone") as string,
-      email: formData.get("email") as string,
-      insurance: formData.get("insurance") as string,
-      message: formData.get("message") as string,
-      source: "Appointment Request",
-    };
-
-    await fetch("https://services.leadconnectorhq.com/hooks/m3cJWahBtUP73smhkOlY/webhook-trigger/b5ecc20a-ba70-46de-ad42-a8ba1f2f2f0a", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    });
-
-    setSubmitted(true);
-  }
-
-  const inputCls =
-    "w-full rounded-xl border border-[#e8e4d9] bg-white px-4 py-3.5 text-[15px] text-[#0a120d] placeholder:text-[#1a2332]/40 focus:border-[#3d7a52] focus:outline-none focus:ring-2 focus:ring-[#3d7a52]/20";
-
   return (
-    <section className="bg-white py-20 md:py-28">
-      <div className="mx-auto w-full max-w-[1180px] px-6 xl:px-8">
-        <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
-          {/* Form */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, ease }}
-            className="lg:col-span-7"
-          >
-            <span className="inline-flex items-center gap-3 text-[12px] font-semibold uppercase tracking-[0.28em] text-[#3d7a52]">
-              <span aria-hidden className="h-px w-8 bg-[#3d7a52]/70" />
-              Request an Appointment
-            </span>
-            <h2 className="mt-4 font-serif-display text-[34px] sm:text-[42px] leading-[1.08] tracking-tight text-[#0a120d]">
-              Request An Appointment Today
-            </h2>
-            <p className="mt-4 text-[15.5px] leading-[1.7] text-[#1a2332]/70">
-              Share a few details below and our team will follow up to confirm a convenient time for your visit.
-            </p>
+    <>
+      <section className="bg-white py-20 md:py-28">
+        <div className="mx-auto w-full max-w-[1180px] px-6 xl:px-8">
+          <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
+            {/* Form */}
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, ease }}
+              className="lg:col-span-7"
+            >
+              <span className="inline-flex items-center gap-3 text-[12px] font-semibold uppercase tracking-[0.28em] text-[#3d7a52]">
+                <span aria-hidden className="h-px w-8 bg-[#3d7a52]/70" />
+                Request an Appointment
+              </span>
+              <h2 className="mt-4 font-serif-display text-[34px] sm:text-[42px] leading-[1.08] tracking-tight text-[#0a120d]">
+                Request An Appointment Today
+              </h2>
+              <p className="mt-4 text-[15.5px] leading-[1.7] text-[#1a2332]/70">
+                Share a few details below and our team will follow up to confirm a convenient time for your visit.
+              </p>
 
-            {submitted ? (
-              <div className="mt-8 rounded-2xl bg-[#f6f3ea] p-8 ring-1 ring-[#e8e4d9]">
-                <p className="font-serif-display text-[24px] leading-snug text-[#0a120d]">
-                  Thank you &mdash; your request is on its way.
-                </p>
-                <p className="mt-2 text-[15px] leading-[1.7] text-[#1a2332]/75">
-                  Our team will reach out shortly to confirm your appointment. For an immediate response, please call{" "}
-                  <a href="tel:+17756839026" className="font-semibold text-[#13231a] underline decoration-[#c6b180] decoration-2 underline-offset-[4px] hover:text-[#3d7a52]">
-                    (775) 683-9026
-                  </a>
-                  .
-                </p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="mt-8 grid gap-5">
-                <div className="grid gap-5 sm:grid-cols-2">
-                  <label className="block">
-                    <span className="mb-2 block text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332]/70">
-                      First Name
-                    </span>
-                    <input name="first" type="text" className={inputCls} placeholder="First Name" />
-                  </label>
-                  <label className="block">
-                    <span className="mb-2 block text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332]/70">
-                      Last Name
-                    </span>
-                    <input name="last" type="text" className={inputCls} placeholder="Last Name" />
-                  </label>
-                </div>
-
-                <div className="grid gap-5 sm:grid-cols-2">
-                  <label className="block">
-                    <span className="mb-2 block text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332]/70">
-                      Phone <span className="text-[#3d7a52]">*</span>
-                    </span>
-                    <input required name="phone" type="tel" className={inputCls} placeholder="Phone" />
-                  </label>
-                  <label className="block">
-                    <span className="mb-2 block text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332]/70">
-                      Email <span className="text-[#3d7a52]">*</span>
-                    </span>
-                    <div className="relative">
-                      <svg
-                        aria-hidden
-                        viewBox="0 0 24 24"
-                        width="16"
-                        height="16"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="1.8"
-                        className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[#1a2332]/40"
-                      >
-                        <rect x="3" y="5" width="18" height="14" rx="2" />
-                        <path d="m3 7 9 6 9-6" />
-                      </svg>
-                      <input
-                        required
-                        name="email"
-                        type="email"
-                        className={`${inputCls} pl-11`}
-                        placeholder="Email"
-                      />
-                    </div>
-                  </label>
-                </div>
-
-                <label className="block">
-                  <span className="mb-2 block text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332]/70">
-                    Insurance Provider
-                  </span>
-                  <input name="insurance" type="text" className={inputCls} />
-                </label>
-
-                <label className="block">
-                  <span className="mb-2 block text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332]/70">
-                    Message
-                  </span>
-                  <textarea name="message" rows={4} className={inputCls} />
-                </label>
-
-                <label className="flex items-start gap-3 rounded-2xl bg-[#f6f3ea]/60 p-4 ring-1 ring-[#e8e4d9]">
-                  <input
-                    required
-                    type="checkbox"
-                    name="consent"
-                    className="mt-1 h-4 w-4 flex-none accent-[#3d7a52]"
+              <div className="mt-8 overflow-hidden rounded-2xl bg-white shadow-[0_8px_32px_-8px_rgba(10,18,13,0.12)] ring-1 ring-[#e8e4d9]">
+                <div className="relative" style={{ minHeight: '808px' }}>
+                  <iframe
+                    src="https://api.leadconnectorhq.com/widget/form/qDfQoPCHzpq1r5FpaDL7"
+                    style={{ width: '100%', height: '100%', border: 'none', minHeight: '808px' }}
+                    id="inline-qDfQoPCHzpq1r5FpaDL7"
+                    data-layout={'{"id":"INLINE"}'}
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name=" 🟢 website form"
+                    data-height="808"
+                    data-layout-iframe-id="inline-qDfQoPCHzpq1r5FpaDL7"
+                    data-form-id="qDfQoPCHzpq1r5FpaDL7"
+                    title=" 🟢 website form"
                   />
-                  <span className="text-[12.5px] leading-[1.6] text-[#1a2332]/75">
-                    Reno Regenerative Medicine is committed to protecting and respecting your privacy, and we&rsquo;ll only use your personal information to administer your account and to provide the products and services you requested from us. I consent to receive SMS notifications, alerts &amp; occasional marketing communication from company. Message frequency varies. Message &amp; data rates may apply. Text HELP to (775) 204-3533 for assistance. You can reply STOP to unsubscribe at any time.
-                  </span>
-                </label>
-
-                <div>
-                  <button
-                    type="submit"
-                    className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#4a7c59] to-[#3d7a52] px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.22em] text-white shadow-[0_18px_40px_-18px_rgba(74,124,89,0.85)] transition-colors hover:from-[#3d7a52] hover:to-[#2e5e3f] sm:w-auto"
-                  >
-                    Submit
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden>
-                      <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </button>
                 </div>
-              </form>
-            )}
-          </motion.div>
+              </div>
+            </motion.div>
 
           {/* Office card */}
           <motion.aside
@@ -249,5 +136,7 @@ export default function AppointmentsBody() {
         </div>
       </div>
     </section>
+    <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="lazyOnload" />
+    </>
   );
 }
