@@ -157,8 +157,27 @@ function IntroCardsSection() {
 function ContactFormSection() {
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    
+    const formData = new FormData(e.currentTarget);
+    const payload = {
+      firstName: formData.get("first") as string,
+      lastName: formData.get("last") as string,
+      phone: formData.get("phone") as string,
+      email: formData.get("email") as string,
+      insurance: formData.get("insurance") as string,
+      message: formData.get("message") as string,
+    };
+
+    await fetch("https://services.leadconnectorhq.com/hooks/m3cJWahBtUP73smhkOlY/webhook-trigger/b5ecc20a-ba70-46de-ad42-a8ba1f2f2f0a", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
     setSubmitted(true);
   }
 
