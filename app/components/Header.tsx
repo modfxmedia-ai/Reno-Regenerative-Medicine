@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import ScrollLink from "./ScrollLink";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -130,7 +130,7 @@ function isActive(pathname: string, href: string) {
 
 function Logo({ scrolled }: { scrolled: boolean }) {
   return (
-    <Link
+    <ScrollLink
       href="/"
       aria-label="Reno Regenerative Medicine — Home"
       className={`relative inline-flex items-center group transition-transform duration-300 ${
@@ -145,7 +145,7 @@ function Logo({ scrolled }: { scrolled: boolean }) {
         height={326}
         className="block h-9 sm:h-10 lg:h-10 xl:h-11 w-auto max-w-none object-contain"
       />
-    </Link>
+    </ScrollLink>
   );
 }
 
@@ -224,7 +224,7 @@ function DesktopNavItem({ item, pathname }: { item: NavItem; pathname: string })
       onMouseEnter={() => hasDropdown && setOpen(true)}
       onMouseLeave={() => hasDropdown && setOpen(false)}
     >
-      <Link
+      <ScrollLink
         href={item.href}
         aria-haspopup={hasDropdown || undefined}
         aria-expanded={hasDropdown ? open : undefined}
@@ -250,7 +250,7 @@ function DesktopNavItem({ item, pathname }: { item: NavItem; pathname: string })
             <ChevronIcon />
           </motion.span>
         )}
-      </Link>
+      </ScrollLink>
 
       {hasDropdown && (
         <AnimatePresence>
@@ -272,7 +272,7 @@ function DesktopNavItem({ item, pathname }: { item: NavItem; pathname: string })
                   const isExternal = /^https?:\/\//.test(d.href);
                   return (
                   <li key={d.href} role="none">
-                    <Link
+                    <ScrollLink
                       href={d.href}
                       role="menuitem"
                       target={isExternal ? "_blank" : undefined}
@@ -283,7 +283,7 @@ function DesktopNavItem({ item, pathname }: { item: NavItem; pathname: string })
                       <span aria-hidden className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition text-[#4a7c59]">
                         →
                       </span>
-                    </Link>
+                    </ScrollLink>
                   </li>
                   );
                 })}
@@ -345,7 +345,7 @@ function MobileMenu({
           >
             {/* Drawer header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
-              <Link href="/" onClick={onClose} aria-label="Home" className="inline-flex items-center">
+              <ScrollLink href="/" onClick={onClose} aria-label="Home" className="inline-flex items-center">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/logo.png"
@@ -354,7 +354,7 @@ function MobileMenu({
                   height={326}
                   className="h-11 w-auto max-w-none object-contain brightness-0 invert"
                 />
-              </Link>
+              </ScrollLink>
               <button
                 type="button"
                 onClick={onClose}
@@ -377,7 +377,7 @@ function MobileMenu({
                   return (
                     <li key={item.label}>
                       <div className="flex items-stretch">
-                        <Link
+                        <ScrollLink
                           href={item.href}
                           onClick={onClose}
                           className={`flex-1 py-4 px-3 text-[15px] font-semibold uppercase tracking-[0.14em] rounded-md transition-colors ${
@@ -385,7 +385,7 @@ function MobileMenu({
                           }`}
                         >
                           {item.label}
-                        </Link>
+                        </ScrollLink>
                         {hasDropdown && (
                           <button
                             type="button"
@@ -414,7 +414,7 @@ function MobileMenu({
                                 const isExternal = /^https?:\/\//.test(d.href);
                                 return (
                                 <li key={d.href}>
-                                  <Link
+                                  <ScrollLink
                                     href={d.href}
                                     onClick={onClose}
                                     target={isExternal ? "_blank" : undefined}
@@ -422,7 +422,7 @@ function MobileMenu({
                                     className="block ml-6 mr-2 px-3 py-2.5 rounded-md text-[13px] text-white/80 hover:bg-white/5 hover:text-[#c6b180] transition-colors"
                                   >
                                     {d.label}
-                                  </Link>
+                                  </ScrollLink>
                                 </li>
                                 );
                               })}
@@ -438,13 +438,13 @@ function MobileMenu({
 
             {/* Drawer footer / CTAs */}
             <div className="px-5 py-5 border-t border-white/10 space-y-3 bg-black/20">
-              <Link
+              <ScrollLink
                 href="/appointments"
                 onClick={onClose}
                 className="block w-full text-center rounded-full bg-[#c6b180] hover:bg-white px-5 py-3.5 text-[12px] font-semibold uppercase tracking-[0.18em] text-[#1a2332] transition-colors"
               >
                 Request Appointment
-              </Link>
+              </ScrollLink>
               <a
                 href="tel:+17756839026"
                 className="flex items-center justify-center gap-2 w-full rounded-full border border-white/20 px-5 py-3.5 text-[13px] font-medium text-white hover:border-[#c6b180] hover:text-[#c6b180] transition-colors"
@@ -544,7 +544,7 @@ export default function Header() {
 
           {/* Right: CTA only */}
           <div className="flex shrink-0 items-center">
-            <Link
+            <ScrollLink
               href="/appointments"
               className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap min-w-fit rounded-full bg-gradient-to-r from-[#4a7c59] to-[#3d7a52] hover:from-[#3d7a52] hover:to-[#2e5e3f] px-5 py-2.5 text-[12px] font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_24px_-12px_rgba(74,124,89,0.7)] transition-colors"
             >
@@ -553,7 +553,7 @@ export default function Header() {
               <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden>
                 <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </Link>
+            </ScrollLink>
           </div>
         </div>
 
@@ -571,12 +571,12 @@ export default function Header() {
             >
               <PhoneIcon />
             </a>
-            <Link
+            <ScrollLink
               href="/appointments"
               className="hidden sm:inline-flex items-center whitespace-nowrap rounded-full bg-gradient-to-r from-[#4a7c59] to-[#3d7a52] hover:from-[#3d7a52] hover:to-[#2e5e3f] px-3.5 py-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition-colors"
             >
               Book
-            </Link>
+            </ScrollLink>
             <button
               type="button"
               aria-label={mobileOpen ? "Close menu" : "Open menu"}

@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageHero from "../components/PageHero";
 import CTASection from "../components/CTASection";
-import CareersForm from "./CareersForm";
+import WebsiteForm from "../components/WebsiteForm";
 import { getMeta } from "../lib/pageMeta";
 
 const meta = getMeta("/careers/")!;
@@ -174,8 +174,8 @@ export default function Page() {
                 for. We review every submission.
               </p>
             </div>
-            <div className="mt-10 rounded-2xl border border-[#e8e4d9] bg-white p-6 sm:p-10">
-              <CareersForm />
+            <div className="mt-10">
+              <WebsiteForm />
             </div>
           </div>
         </section>

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import ScrollLink from "./ScrollLink";
 import { motion } from "framer-motion";
 import MotionOrbs from "./MotionOrbs";
 
@@ -189,7 +189,7 @@ export default function HeroV2() {
           transition={{ duration: 0.6, ease, delay: 0.38 }}
           className="mt-9 flex flex-wrap items-center justify-center gap-3"
         >
-          <Link
+          <ScrollLink
             href="/appointments"
             className="group inline-flex items-center gap-2 rounded-md bg-[#4a7c59] hover:bg-[#3d7a52] px-6 py-3.5 text-[12px] font-semibold uppercase tracking-[0.16em] text-white shadow-[0_10px_30px_-10px_rgba(74,124,89,0.7)] transition-colors"
           >
@@ -205,7 +205,7 @@ export default function HeroV2() {
             >
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>
-          </Link>
+          </ScrollLink>
           <a
             href="tel:+17756839026"
             className="inline-flex items-center gap-2 rounded-md border border-white/20 hover:border-white/40 hover:bg-white/5 px-6 py-3.5 text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-colors"

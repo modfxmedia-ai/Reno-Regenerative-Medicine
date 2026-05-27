@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageHero from "../components/PageHero";
 import CTASection from "../components/CTASection";
-import ImproveForm from "./ImproveForm";
+import WebsiteForm from "../components/WebsiteForm";
 import { getMeta } from "../lib/pageMeta";
 
 const meta = getMeta("/what-can-we-improve/")!;
@@ -63,8 +63,8 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="mt-10 rounded-2xl border border-[#e8e4d9] bg-white p-6 sm:p-10">
-              <ImproveForm />
+            <div className="mt-10">
+              <WebsiteForm />
             </div>
 
             <p className="mt-8 text-center text-sm text-ink/60">

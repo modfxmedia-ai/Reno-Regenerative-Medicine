@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ScrollLink from "./ScrollLink";
 
 const SERVICES = [
   { label: "Joint Injections", href: "/joint-injections/" },
@@ -35,12 +35,12 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <Link href="/" className="font-serif-display text-3xl text-white tracking-wide leading-none block">
+            <ScrollLink href="/" className="font-serif-display text-3xl text-white tracking-wide leading-none block">
               <span className="text-olive">Reno</span> Regenerative
               <span className="block text-[10px] tracking-[0.35em] uppercase text-white/50 mt-2">
                 Medicine · Reno, NV
               </span>
-            </Link>
+            </ScrollLink>
             <p className="mt-6 max-w-sm text-sm leading-relaxed">
               Innovative and integrative medicine in Reno, Nevada — chiropractic, therapeutic exercise, regenerative joint injections and IV nutrition for patients across Northern Nevada and surrounding California communities.
             </p>
@@ -66,13 +66,13 @@ export default function Footer() {
             <div>
               <h3 className="text-[11px] uppercase tracking-[0.3em] text-olive mb-5">Services</h3>
               <ul className="space-y-3 text-sm">
-                {SERVICES.map((l) => (<li key={l.href}><Link href={l.href} className="hover:text-olive transition-colors">{l.label}</Link></li>))}
+                {SERVICES.map((l) => (<li key={l.href}><ScrollLink href={l.href} className="hover:text-olive transition-colors">{l.label}</ScrollLink></li>))}
               </ul>
             </div>
             <div>
               <h3 className="text-[11px] uppercase tracking-[0.3em] text-olive mb-5">Patients</h3>
               <ul className="space-y-3 text-sm">
-                {PATIENTS.map((l) => (<li key={l.href}><Link href={l.href} className="hover:text-olive transition-colors">{l.label}</Link></li>))}
+                {PATIENTS.map((l) => (<li key={l.href}><ScrollLink href={l.href} className="hover:text-olive transition-colors">{l.label}</ScrollLink></li>))}
               </ul>
             </div>
             <div>
@@ -82,14 +82,14 @@ export default function Footer() {
                   const isExternal = /^https?:\/\//.test(l.href);
                   return (
                     <li key={l.href}>
-                      <Link
+                      <ScrollLink
                         href={l.href}
                         target={isExternal ? "_blank" : undefined}
                         rel={isExternal ? "noopener noreferrer" : undefined}
                         className="hover:text-olive transition-colors"
                       >
                         {l.label}
-                      </Link>
+                      </ScrollLink>
                     </li>
                   );
                 })}

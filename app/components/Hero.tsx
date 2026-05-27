@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import ScrollLink from "./ScrollLink";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -54,12 +54,12 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
           className="mt-10 flex flex-wrap items-center gap-6"
         >
-          <Link
+          <ScrollLink
             href="/contact/"
             className="inline-flex items-center rounded-full bg-olive px-7 py-3.5 text-sm font-medium text-white hover:bg-cream hover:text-forest-deep transition-colors"
           >
             Request Appointment
-          </Link>
+          </ScrollLink>
           <a
             href="tel:+17756839026"
             className="text-sm uppercase tracking-widest text-white/90 hover:text-olive border-b border-white/30 hover:border-olive pb-1 transition-colors"
