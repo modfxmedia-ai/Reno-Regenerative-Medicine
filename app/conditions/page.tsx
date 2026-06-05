@@ -8,7 +8,7 @@ import ConditionsOverviewBody from "./ConditionsOverviewBody";
 
 export const metadata: Metadata = buildMeta({
   slug: "/conditions/",
-  title: "Conditions We Treat at Reno Regenerative | Book Now",
+  title: "Conditions We Treat | Book Now",
   description:
     "Are you struggling with ongoing pain? Explore the conditions we treat with our natural, holistic methods. Let us help you heal. Book a consultation today.",
 });

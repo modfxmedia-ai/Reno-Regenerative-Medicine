@@ -10,7 +10,7 @@ const meta = getMeta("/accessibility/")!;
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.description,
-  alternates: { canonical: "https://renoregen.com/accessibility/" },
+  alternates: { canonical: "https://www.renoregen.com/accessibility/" },
 };
 
 const SSA_TIPS = [

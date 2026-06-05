@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     "Stay active in the Sierra with a trusted chiropractor in Reno, NV, helping reduce pain, improve mobility, and support recovery for weekend adventures",
   alternates: {
     canonical:
-      "https://renoregen.com/chiropractic-care-active-weekends-mountain-adventures/",
+      "https://www.renoregen.com/chiropractic-care-active-weekends-mountain-adventures/",
   },
   openGraph: {
     title: "Reno Weekend Athletes Guide to Chiropractic Relief",
     description:
       "Stay active in the Sierra with a trusted chiropractor in Reno, NV, helping reduce pain, improve mobility, and support recovery for weekend adventures",
-    url: "https://renoregen.com/chiropractic-care-active-weekends-mountain-adventures/",
+    url: "https://www.renoregen.com/chiropractic-care-active-weekends-mountain-adventures/",
     type: "article",
     publishedTime: "2026-05-17T17:00:00+00:00",
     images: [post.image],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 /* ------------------------------------------------------------------ */
 /*  Verbatim body content from                                        */
-/*  https://renoregen.com/chiropractic-care-active-weekends-mountain-adventures/ */
+/*  https://www.renoregen.com/chiropractic-care-active-weekends-mountain-adventures/ */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

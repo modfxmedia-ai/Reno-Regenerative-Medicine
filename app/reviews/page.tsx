@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Patient Reviews and Stories",
   description:
     "Wondering if our treatments really work? Read honest reviews from our patients who have found natural relief from daily aches. Book your visit today!",
-  alternates: { canonical: "https://renoregen.com/reviews/" },
+  alternates: { canonical: "https://www.renoregen.com/reviews/" },
   openGraph: {
     title: "Patient Reviews and Stories",
     description:
       "Wondering if our treatments really work? Read honest reviews from our patients who have found natural relief from daily aches. Book your visit today!",
-    url: "https://renoregen.com/reviews/",
+    url: "https://www.renoregen.com/reviews/",
     type: "website",
   },
 };

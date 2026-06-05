@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "How Knee Decompression Eases Joint Catching",
   description:
     "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Why Your Knee Feels Like It’s Grinding: How Knee Decompression Can Ease Annoying Joint Catching\".",
-  alternates: { canonical: "https://renoregen.com/why-your-knee-feels-like-its-grinding-how-knee-decompression-can-ease-annoying-joint-catching/" },
+  alternates: { canonical: "https://www.renoregen.com/why-your-knee-feels-like-its-grinding-how-knee-decompression-can-ease-annoying-joint-catching/" },
   openGraph: {
     title: "How Knee Decompression Eases Joint Catching",
     description:
       "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Why Your Knee Feels Like It’s Grinding: How Knee Decompression Can Ease Annoying Joint Catching\".",
-    url: "https://renoregen.com/why-your-knee-feels-like-its-grinding-how-knee-decompression-can-ease-annoying-joint-catching/",
+    url: "https://www.renoregen.com/why-your-knee-feels-like-its-grinding-how-knee-decompression-can-ease-annoying-joint-catching/",
     type: "article",
     publishedTime: "2026-01-30T05:39:17+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/why-your-knee-feels-like-its-grinding-how-knee-decompression-can-ease-annoying-joint-catching/                            */
+/*  Verbatim body content from https://www.renoregen.com/why-your-knee-feels-like-its-grinding-how-knee-decompression-can-ease-annoying-joint-catching/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

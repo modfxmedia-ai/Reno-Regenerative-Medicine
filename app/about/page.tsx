@@ -8,7 +8,7 @@ import AboutBody from "./AboutBody";
 
 export const metadata: Metadata = buildMeta({
   slug: "/about/",
-  title: "About Reno Regenerative | Pain Management Experts",
+  title: "About | Pain Management Experts in Reno, NV",
   description:
     "Chronic discomfort can feel isolating. Our dedicated staff is here to listen, support you, and help manage your pain without relying on surgery. Reach out!",
 });

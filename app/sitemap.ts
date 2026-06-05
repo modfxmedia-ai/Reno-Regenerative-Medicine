@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { ALL_PAGES } from "./lib/pageMeta";
 import { getAllSlugs } from "./lib/pseo/combinations";
 
-const SITE = "https://renoregen.com";
+const SITE = "https://www.renoregen.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

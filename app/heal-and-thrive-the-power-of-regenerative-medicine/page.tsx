@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Heal and Thrive: The Power of Regenerative Medicine",
   description:
     "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Heal and Thrive: The Power of Regenerative Medicine\".",
-  alternates: { canonical: "https://renoregen.com/heal-and-thrive-the-power-of-regenerative-medicine/" },
+  alternates: { canonical: "https://www.renoregen.com/heal-and-thrive-the-power-of-regenerative-medicine/" },
   openGraph: {
     title: "Heal and Thrive: The Power of Regenerative Medicine",
     description:
       "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Heal and Thrive: The Power of Regenerative Medicine\".",
-    url: "https://renoregen.com/heal-and-thrive-the-power-of-regenerative-medicine/",
+    url: "https://www.renoregen.com/heal-and-thrive-the-power-of-regenerative-medicine/",
     type: "article",
     publishedTime: "2025-06-29T21:35:56+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/heal-and-thrive-the-power-of-regenerative-medicine/                            */
+/*  Verbatim body content from https://www.renoregen.com/heal-and-thrive-the-power-of-regenerative-medicine/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

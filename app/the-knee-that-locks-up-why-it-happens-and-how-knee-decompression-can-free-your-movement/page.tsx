@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "The Knee That “Locks Up”: Why It Happens and How Knee Decompression Can Free Your Movement",
   description:
     "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"The Knee That “Locks Up”: Why It Happens and How Knee Decompression Can Free Your Movement\".",
-  alternates: { canonical: "https://renoregen.com/the-knee-that-locks-up-why-it-happens-and-how-knee-decompression-can-free-your-movement/" },
+  alternates: { canonical: "https://www.renoregen.com/the-knee-that-locks-up-why-it-happens-and-how-knee-decompression-can-free-your-movement/" },
   openGraph: {
     title: "The Knee That “Locks Up”: Why It Happens and How Knee Decompression Can Free Your Movement",
     description:
       "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"The Knee That “Locks Up”: Why It Happens and How Knee Decompression Can Free Your Movement\".",
-    url: "https://renoregen.com/the-knee-that-locks-up-why-it-happens-and-how-knee-decompression-can-free-your-movement/",
+    url: "https://www.renoregen.com/the-knee-that-locks-up-why-it-happens-and-how-knee-decompression-can-free-your-movement/",
     type: "article",
     publishedTime: "2026-01-30T05:46:49+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/the-knee-that-locks-up-why-it-happens-and-how-knee-decompression-can-free-your-movement/                            */
+/*  Verbatim body content from https://www.renoregen.com/the-knee-that-locks-up-why-it-happens-and-how-knee-decompression-can-free-your-movement/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

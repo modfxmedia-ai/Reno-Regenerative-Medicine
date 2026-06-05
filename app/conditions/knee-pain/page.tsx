@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Knee Pain | Trusted Knee Pain Doctor in Reno, NV",
   description:
     "Find relief at Reno Regenerative. Explore our Knee Pain page to learn how our Reno pain management clinic can help you. Call now!",
-  alternates: { canonical: "https://renoregen.com/conditions/knee-pain/" },
+  alternates: { canonical: "https://www.renoregen.com/conditions/knee-pain/" },
 };
 
 const PROSE =

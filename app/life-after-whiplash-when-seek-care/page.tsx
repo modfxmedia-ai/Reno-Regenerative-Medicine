@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Whiplash Recovery Options in Reno: What to Do Next",
   description:
     "Learn how to manage symptoms and know when to seek whiplash treatment in Reno with integrative pain care that helps you avoid surgery and meds.",
-  alternates: { canonical: "https://renoregen.com/life-after-whiplash-when-seek-care/" },
+  alternates: { canonical: "https://www.renoregen.com/life-after-whiplash-when-seek-care/" },
   openGraph: {
     title: "Whiplash Recovery Options in Reno: What to Do Next",
     description:
       "Learn how to manage symptoms and know when to seek whiplash treatment in Reno with integrative pain care that helps you avoid surgery and meds.",
-    url: "https://renoregen.com/life-after-whiplash-when-seek-care/",
+    url: "https://www.renoregen.com/life-after-whiplash-when-seek-care/",
     type: "article",
     publishedTime: "2026-04-26T17:00:00+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/life-after-whiplash-when-seek-care/                            */
+/*  Verbatim body content from https://www.renoregen.com/life-after-whiplash-when-seek-care/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

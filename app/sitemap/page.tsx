@@ -18,7 +18,7 @@ const meta = getMeta("/sitemap/")!;
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.description,
-  alternates: { canonical: "https://renoregen.com/sitemap/" },
+  alternates: { canonical: "https://www.renoregen.com/sitemap/" },
 };
 
 /* ------------------------------------------------------------------ */

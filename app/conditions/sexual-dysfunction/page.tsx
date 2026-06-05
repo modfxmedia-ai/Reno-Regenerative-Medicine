@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Restorative Care for Men Experiencing Sexual Dysfunction",
   description:
     "Intimacy struggles like ED can be deeply frustrating. We use therapies like ED shockwave therapy to improve blood flow and restore confidence. Reach out now.",
-  alternates: { canonical: "https://renoregen.com/conditions/sexual-dysfunction/" },
+  alternates: { canonical: "https://www.renoregen.com/conditions/sexual-dysfunction/" },
 };
 
 const PROSE =

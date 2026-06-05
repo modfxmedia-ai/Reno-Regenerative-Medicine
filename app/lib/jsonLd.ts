@@ -3,7 +3,7 @@
 
 import { SERVICES_BY_SLUG, type ServiceData, type ServiceSlug } from "./services";
 
-export const SITE_URL = "https://renoregen.com";
+export const SITE_URL = "https://www.renoregen.com";
 export const BRAND = "Reno Regenerative Medicine";
 
 const BUSINESS_ID = `${SITE_URL}/#business`;

@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Why Your Joints Feel Stiff Every Morning: What Your Body Is Trying to Tell You",
   description:
     "Discover why your joints feel stiff every morning and how regenerative medicine and joint injections in Reno can restore mobility.",
-  alternates: { canonical: "https://renoregen.com/why-your-joints-feel-stiff-every-morning-what-your-body-is-trying-to-tell-you/" },
+  alternates: { canonical: "https://www.renoregen.com/why-your-joints-feel-stiff-every-morning-what-your-body-is-trying-to-tell-you/" },
   openGraph: {
     title: "Why Your Joints Feel Stiff Every Morning: What Your Body Is Trying to Tell You",
     description:
       "Discover why your joints feel stiff every morning and how regenerative medicine and joint injections in Reno can restore mobility.",
-    url: "https://renoregen.com/why-your-joints-feel-stiff-every-morning-what-your-body-is-trying-to-tell-you/",
+    url: "https://www.renoregen.com/why-your-joints-feel-stiff-every-morning-what-your-body-is-trying-to-tell-you/",
     type: "article",
     publishedTime: "2026-03-11T15:56:52+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/why-your-joints-feel-stiff-every-morning-what-your-body-is-trying-to-tell-you/                            */
+/*  Verbatim body content from https://www.renoregen.com/why-your-joints-feel-stiff-every-morning-what-your-body-is-trying-to-tell-you/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

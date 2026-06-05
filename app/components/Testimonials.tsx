@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -257,8 +258,15 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease, delay: 0.2 }}
-          className="mt-12 text-center"
+          className="mt-12 text-center flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8"
         >
+          <Link
+            href="/reviews/"
+            className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.25em] text-white/85 hover:text-[#c6b180] border-b border-[#c6b180]/60 hover:border-[#c6b180] pb-1 transition-colors"
+          >
+            Read All Patient Reviews
+            <span aria-hidden>→</span>
+          </Link>
           <a
             href="https://www.google.com/maps/search/Reno+Regenerative+Medicine+Reno+NV"
             target="_blank"

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PAGES, type PageMeta } from "./pageMeta";
 
-const SITE_URL = "https://renoregen.com";
+const SITE_URL = "https://www.renoregen.com";
 const BRAND = "Reno Regenerative Medicine";
 
 export type GenerateMetadataInput = {

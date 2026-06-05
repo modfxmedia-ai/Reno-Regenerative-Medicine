@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "How Regenerative Care Boosts Your Hormone Health",
   description:
     "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Unlock Your Best Self: How Regenerative Medicine Boosts Hormone Health\".",
-  alternates: { canonical: "https://renoregen.com/unlock-your-best-self-how-regenerative-medicine-boosts-hormone-health/" },
+  alternates: { canonical: "https://www.renoregen.com/unlock-your-best-self-how-regenerative-medicine-boosts-hormone-health/" },
   openGraph: {
     title: "How Regenerative Care Boosts Your Hormone Health",
     description:
       "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Unlock Your Best Self: How Regenerative Medicine Boosts Hormone Health\".",
-    url: "https://renoregen.com/unlock-your-best-self-how-regenerative-medicine-boosts-hormone-health/",
+    url: "https://www.renoregen.com/unlock-your-best-self-how-regenerative-medicine-boosts-hormone-health/",
     type: "article",
     publishedTime: "2025-07-13T00:01:31+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/unlock-your-best-self-how-regenerative-medicine-boosts-hormone-health/                            */
+/*  Verbatim body content from https://www.renoregen.com/unlock-your-best-self-how-regenerative-medicine-boosts-hormone-health/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

@@ -7,7 +7,7 @@ const meta = getMeta("/thank-you/")!;
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.description,
-  alternates: { canonical: `https://renoregen.com/thank-you/` },
+  alternates: { canonical: `https://www.renoregen.com/thank-you/` },
 };
 
 export default function Page() {

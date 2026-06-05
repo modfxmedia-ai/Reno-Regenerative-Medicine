@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Explore Holistic Pain Management in Sparks, NV",
   description:
     "Living with daily aches drains your energy. Our pain care clinic in Sparks, NV focuses on natural healing to help you find true comfort. Call us today!",
-  alternates: { canonical: "https://renoregen.com/conditions/pain-relief/" },
+  alternates: { canonical: "https://www.renoregen.com/conditions/pain-relief/" },
 };
 
 const PROSE =

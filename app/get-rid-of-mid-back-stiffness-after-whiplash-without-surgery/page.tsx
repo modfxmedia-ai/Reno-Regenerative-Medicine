@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Get Rid of Mid Back Stiffness After Whiplash Without Surgery",
   description:
     "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Get Rid of Mid Back Stiffness After Whiplash Without Surgery\".",
-  alternates: { canonical: "https://renoregen.com/get-rid-of-mid-back-stiffness-after-whiplash-without-surgery/" },
+  alternates: { canonical: "https://www.renoregen.com/get-rid-of-mid-back-stiffness-after-whiplash-without-surgery/" },
   openGraph: {
     title: "Get Rid of Mid Back Stiffness After Whiplash Without Surgery",
     description:
       "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Get Rid of Mid Back Stiffness After Whiplash Without Surgery\".",
-    url: "https://renoregen.com/get-rid-of-mid-back-stiffness-after-whiplash-without-surgery/",
+    url: "https://www.renoregen.com/get-rid-of-mid-back-stiffness-after-whiplash-without-surgery/",
     type: "article",
     publishedTime: "2025-08-21T20:56:25+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/get-rid-of-mid-back-stiffness-after-whiplash-without-surgery/                            */
+/*  Verbatim body content from https://www.renoregen.com/get-rid-of-mid-back-stiffness-after-whiplash-without-surgery/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

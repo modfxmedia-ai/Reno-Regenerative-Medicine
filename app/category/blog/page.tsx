@@ -7,7 +7,7 @@ const meta = getMeta("/category/blog/")!;
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.description,
-  alternates: { canonical: `https://renoregen.com/category/blog/` },
+  alternates: { canonical: `https://www.renoregen.com/category/blog/` },
 };
 
 export default function Page() {

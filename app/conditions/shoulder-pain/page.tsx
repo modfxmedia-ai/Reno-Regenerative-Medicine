@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Get Help From an Expert Shoulder Pain Doctor in Reno, NV",
   description:
     "Trouble lifting your arm or sleeping on your side? See our shoulder specialist in Reno, NV to repair soft tissue and restore your mobility. Book today!",
-  alternates: { canonical: "https://renoregen.com/conditions/shoulder-pain/" },
+  alternates: { canonical: "https://www.renoregen.com/conditions/shoulder-pain/" },
 };
 
 const PROSE =

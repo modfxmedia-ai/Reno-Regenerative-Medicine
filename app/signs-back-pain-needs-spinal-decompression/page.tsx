@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "When Back Pain Means You Need Decompression Therapy",
   description:
     "Learn warning signs that indicate spinal decompression may help relieve nerve pressure, improve mobility, and reduce pain without surgery.",
-  alternates: { canonical: "https://renoregen.com/signs-back-pain-needs-spinal-decompression/" },
+  alternates: { canonical: "https://www.renoregen.com/signs-back-pain-needs-spinal-decompression/" },
   openGraph: {
     title: "When Back Pain Means You Need Decompression Therapy",
     description:
       "Learn warning signs that indicate spinal decompression may help relieve nerve pressure, improve mobility, and reduce pain without surgery.",
-    url: "https://renoregen.com/signs-back-pain-needs-spinal-decompression/",
+    url: "https://www.renoregen.com/signs-back-pain-needs-spinal-decompression/",
     type: "article",
     publishedTime: "2026-04-06T04:08:47+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/signs-back-pain-needs-spinal-decompression/                            */
+/*  Verbatim body content from https://www.renoregen.com/signs-back-pain-needs-spinal-decompression/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

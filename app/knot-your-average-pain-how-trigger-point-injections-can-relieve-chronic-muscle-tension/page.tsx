@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Knot Your Average Pain: How Trigger Point Injections in Reno Can Relieve Chronic Muscle Tension",
   description:
     "Learn how trigger point injections in Reno can relieve chronic muscle pain, tension, and knots for improved mobility and comfort.",
-  alternates: { canonical: "https://renoregen.com/knot-your-average-pain-how-trigger-point-injections-can-relieve-chronic-muscle-tension/" },
+  alternates: { canonical: "https://www.renoregen.com/knot-your-average-pain-how-trigger-point-injections-can-relieve-chronic-muscle-tension/" },
   openGraph: {
     title: "Knot Your Average Pain: How Trigger Point Injections in Reno Can Relieve Chronic Muscle Tension",
     description:
       "Learn how trigger point injections in Reno can relieve chronic muscle pain, tension, and knots for improved mobility and comfort.",
-    url: "https://renoregen.com/knot-your-average-pain-how-trigger-point-injections-can-relieve-chronic-muscle-tension/",
+    url: "https://www.renoregen.com/knot-your-average-pain-how-trigger-point-injections-can-relieve-chronic-muscle-tension/",
     type: "article",
     publishedTime: "2025-11-25T21:08:32+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/knot-your-average-pain-how-trigger-point-injections-can-relieve-chronic-muscle-tension/                            */
+/*  Verbatim body content from https://www.renoregen.com/knot-your-average-pain-how-trigger-point-injections-can-relieve-chronic-muscle-tension/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

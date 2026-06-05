@@ -7,10 +7,10 @@ import CTASection from "../../components/CTASection";
 import ConditionShell from "../../components/ConditionShell";
 
 export const metadata: Metadata = {
-  title: "Compassionate Care for Neck Pain | Reno Regenerative",
+  title: "Compassionate Care for Neck Pain",
   description:
     "Constant neck soreness and stiffness make it hard to focus. Our team works on gently aligning your spine and reducing muscle strain. Book a visit now.",
-  alternates: { canonical: "https://renoregen.com/conditions/neck-pain/" },
+  alternates: { canonical: "https://www.renoregen.com/conditions/neck-pain/" },
 };
 
 const PROSE =

@@ -22,14 +22,15 @@ const serif = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://renoregen.com"),
+  metadataBase: new URL("https://www.renoregen.com"),
   title: {
-    default: "Welcome to Reno Regenerative | Integrative Medicine Clinic",
+    default: "Integrative Medicine Clinic in Reno, NV | Reno Regenerative Medicine",
     template: "%s | Reno Regenerative Medicine",
   },
   description:
     "Looking for an integrative medicine center? Reno Regenerative Medicine helps with knee, back, and joint pain, helping your body heal naturally. Call today!",
-  alternates: { canonical: "https://renoregen.com/" },
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
   icons: {
     icon: [
       { url: "/images/fevicon.jpg", type: "image/jpeg" },
@@ -41,6 +42,7 @@ export const metadata: Metadata = {
     siteName: "Reno Regenerative Medicine",
     locale: "en_US",
     type: "website",
+    url: "https://www.renoregen.com/",
   },
   twitter: {
     card: "summary_large_image",

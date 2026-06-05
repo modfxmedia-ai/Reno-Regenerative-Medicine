@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Back Pain | Effective Back Pain Treatment in Sparks, NV",
   description:
     "Don't let back aches keep you from living fully. We offer non-surgical care in Sparks to help you move comfortably again. Contact our Sparks clinic today.",
-  alternates: { canonical: "https://renoregen.com/conditions/back-pain/" },
+  alternates: { canonical: "https://www.renoregen.com/conditions/back-pain/" },
 };
 
 const PROSE =

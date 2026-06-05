@@ -11,7 +11,7 @@ import {
 
 import PseoBody from "./PseoBody";
 
-const SITE_URL = "https://renoregen.com";
+const SITE_URL = "https://www.renoregen.com";
 const BRAND = "Reno Regenerative Medicine";
 const DEFAULT_HERO = "/images/services/spinal-decompression.jpg";
 

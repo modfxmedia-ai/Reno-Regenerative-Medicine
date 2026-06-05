@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Knee Pain Relief Options With Regenerative Medicine",
   description:
     "Is regenerative medicine right for your knee pain? Explore non-surgical options in Reno, from joint injections to integrative care, to improve mobility.",
-  alternates: { canonical: "https://renoregen.com/is-regenerative-medicine-right-for-knee-pain/" },
+  alternates: { canonical: "https://www.renoregen.com/is-regenerative-medicine-right-for-knee-pain/" },
   openGraph: {
     title: "Knee Pain Relief Options With Regenerative Medicine",
     description:
       "Is regenerative medicine right for your knee pain? Explore non-surgical options in Reno, from joint injections to integrative care, to improve mobility.",
-    url: "https://renoregen.com/is-regenerative-medicine-right-for-knee-pain/",
+    url: "https://www.renoregen.com/is-regenerative-medicine-right-for-knee-pain/",
     type: "article",
     publishedTime: "2026-04-12T17:00:00+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/is-regenerative-medicine-right-for-knee-pain/                            */
+/*  Verbatim body content from https://www.renoregen.com/is-regenerative-medicine-right-for-knee-pain/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

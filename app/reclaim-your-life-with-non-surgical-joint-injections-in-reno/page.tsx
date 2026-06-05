@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Reclaim Your Life with Non-Surgical Joint Injections in Reno",
   description:
     "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Reclaim Your Life with Non-Surgical Joint Injections in Reno\".",
-  alternates: { canonical: "https://renoregen.com/reclaim-your-life-with-non-surgical-joint-injections-in-reno/" },
+  alternates: { canonical: "https://www.renoregen.com/reclaim-your-life-with-non-surgical-joint-injections-in-reno/" },
   openGraph: {
     title: "Reclaim Your Life with Non-Surgical Joint Injections in Reno",
     description:
       "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Reclaim Your Life with Non-Surgical Joint Injections in Reno\".",
-    url: "https://renoregen.com/reclaim-your-life-with-non-surgical-joint-injections-in-reno/",
+    url: "https://www.renoregen.com/reclaim-your-life-with-non-surgical-joint-injections-in-reno/",
     type: "article",
     publishedTime: "2025-09-28T02:53:08+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/reclaim-your-life-with-non-surgical-joint-injections-in-reno/                            */
+/*  Verbatim body content from https://www.renoregen.com/reclaim-your-life-with-non-surgical-joint-injections-in-reno/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

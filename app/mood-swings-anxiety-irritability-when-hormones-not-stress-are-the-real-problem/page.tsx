@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Mood Swings, Anxiety & Irritability: When Hormones — Not Stress — Are the Real Problem",
   description:
     "Mood Swings, Anxiety & Irritability: When Hormones — Not Stress — Are the Real Problem - Discover how bioidentical hormone optimization in Reno can stabilize mood swings, reduce anxiety, and restore emotional balance. Discover how bioidentical hormone optimization in Reno can stabilize mood swings, reduce anxiety, and restore emotional balance.",
-  alternates: { canonical: "https://renoregen.com/mood-swings-anxiety-irritability-when-hormones-not-stress-are-the-real-problem/" },
+  alternates: { canonical: "https://www.renoregen.com/mood-swings-anxiety-irritability-when-hormones-not-stress-are-the-real-problem/" },
   openGraph: {
     title: "Mood Swings, Anxiety & Irritability: When Hormones — Not Stress — Are the Real Problem",
     description:
       "Mood Swings, Anxiety & Irritability: When Hormones — Not Stress — Are the Real Problem - Discover how bioidentical hormone optimization in Reno can stabilize mood swings, reduce anxiety, and restore emotional balance. Discover how bioidentical hormone optimization in Reno can stabilize mood swings, reduce anxiety, and restore emotional balance.",
-    url: "https://renoregen.com/mood-swings-anxiety-irritability-when-hormones-not-stress-are-the-real-problem/",
+    url: "https://www.renoregen.com/mood-swings-anxiety-irritability-when-hormones-not-stress-are-the-real-problem/",
     type: "article",
     publishedTime: "2026-02-25T04:59:05+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/mood-swings-anxiety-irritability-when-hormones-not-stress-are-the-real-problem/                            */
+/*  Verbatim body content from https://www.renoregen.com/mood-swings-anxiety-irritability-when-hormones-not-stress-are-the-real-problem/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

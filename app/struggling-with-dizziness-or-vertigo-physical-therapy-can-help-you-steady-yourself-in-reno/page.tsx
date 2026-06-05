@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Struggling With Dizziness or Vertigo? Physical Therapy Can Help You Steady Yourself in Reno",
   description:
     "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Struggling With Dizziness or Vertigo? Physical Therapy Can Help You Steady Yourself in Reno\".",
-  alternates: { canonical: "https://renoregen.com/struggling-with-dizziness-or-vertigo-physical-therapy-can-help-you-steady-yourself-in-reno/" },
+  alternates: { canonical: "https://www.renoregen.com/struggling-with-dizziness-or-vertigo-physical-therapy-can-help-you-steady-yourself-in-reno/" },
   openGraph: {
     title: "Struggling With Dizziness or Vertigo? Physical Therapy Can Help You Steady Yourself in Reno",
     description:
       "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Struggling With Dizziness or Vertigo? Physical Therapy Can Help You Steady Yourself in Reno\".",
-    url: "https://renoregen.com/struggling-with-dizziness-or-vertigo-physical-therapy-can-help-you-steady-yourself-in-reno/",
+    url: "https://www.renoregen.com/struggling-with-dizziness-or-vertigo-physical-therapy-can-help-you-steady-yourself-in-reno/",
     type: "article",
     publishedTime: "2025-12-16T22:30:21+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/struggling-with-dizziness-or-vertigo-physical-therapy-can-help-you-steady-yourself-in-reno/                            */
+/*  Verbatim body content from https://www.renoregen.com/struggling-with-dizziness-or-vertigo-physical-therapy-can-help-you-steady-yourself-in-reno/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

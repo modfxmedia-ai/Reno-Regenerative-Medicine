@@ -129,9 +129,7 @@ export default function ContactCTASection() {
             id="contact-cta-heading"
             className="mt-5 font-serif-display text-5xl sm:text-6xl md:text-7xl leading-[1.05]"
           >
-            Start Your Journey
-            <br />
-            <em className="italic text-[#c6b180]">to Wellness.</em>
+            Start Your Journey <em className="italic text-[#c6b180]">to Wellness.</em>
           </h2>
         </motion.div>
 

@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Balancing Act: How Bioidentical Hormone Therapy in Reno Can Restore Your Vitality and Well-being",
   description:
     "Balancing Act: How Bioidentical Hormone Therapy in Reno Can Restore Your Vitality and Well-being - Do you ever feel like your body is working against you? You wake up exhausted, even after a full night of sleep, or find yourself snapping at loved ones Discover how bioidentical hormone therapy in Reno can restore balance, relieve symptoms, and improve your overall wellness.",
-  alternates: { canonical: "https://renoregen.com/balancing-act-how-bioidentical-hormone-therapy-can-restore-your-vitality-and-well-being/" },
+  alternates: { canonical: "https://www.renoregen.com/balancing-act-how-bioidentical-hormone-therapy-can-restore-your-vitality-and-well-being/" },
   openGraph: {
     title: "Balancing Act: How Bioidentical Hormone Therapy in Reno Can Restore Your Vitality and Well-being",
     description:
       "Balancing Act: How Bioidentical Hormone Therapy in Reno Can Restore Your Vitality and Well-being - Do you ever feel like your body is working against you? You wake up exhausted, even after a full night of sleep, or find yourself snapping at loved ones Discover how bioidentical hormone therapy in Reno can restore balance, relieve symptoms, and improve your overall wellness.",
-    url: "https://renoregen.com/balancing-act-how-bioidentical-hormone-therapy-can-restore-your-vitality-and-well-being/",
+    url: "https://www.renoregen.com/balancing-act-how-bioidentical-hormone-therapy-can-restore-your-vitality-and-well-being/",
     type: "article",
     publishedTime: "2025-11-25T20:56:58+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/balancing-act-how-bioidentical-hormone-therapy-can-restore-your-vitality-and-well-being/                            */
+/*  Verbatim body content from https://www.renoregen.com/balancing-act-how-bioidentical-hormone-therapy-can-restore-your-vitality-and-well-being/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

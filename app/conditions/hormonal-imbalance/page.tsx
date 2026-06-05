@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Find Your Spark Again With Hormonal Imbalance Care",
   description:
     "Unexplained fatigue, weight gain, and brain fog often stem from shifting hormones. We use bioidentical therapy to restore balance. Visit us!",
-  alternates: { canonical: "https://renoregen.com/conditions/hormonal-imbalance/" },
+  alternates: { canonical: "https://www.renoregen.com/conditions/hormonal-imbalance/" },
 };
 
 const PROSE =

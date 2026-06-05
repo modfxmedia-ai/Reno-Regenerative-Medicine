@@ -154,11 +154,7 @@ export default function HeroV2() {
           transition={{ duration: 0.7, ease, delay: 0.05 }}
           className="font-serif-display mt-7 text-[44px] sm:text-[64px] lg:text-[84px] leading-[0.98] tracking-[-0.02em] text-white"
         >
-          Welcome to{" "}
-          <span className="italic font-medium text-[#c6b180]">
-            Reno Regenerative
-          </span>
-          <br className="hidden sm:block" /> Medicine.
+          Welcome to <span className="italic font-medium text-[#c6b180]">Reno Regenerative</span> Medicine.
         </motion.h1>
 
         {/* Animated pulse line */}

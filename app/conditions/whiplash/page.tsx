@@ -7,10 +7,10 @@ import CTASection from "../../components/CTASection";
 import ConditionShell from "../../components/ConditionShell";
 
 export const metadata: Metadata = {
-  title: "Whiplash Therapy Options at Reno Regenerative",
+  title: "Whiplash Therapy Options",
   description:
     "Whiplash causes severe tension and limited neck movement. Reno Regenerative provides targeted therapies to reduce swelling and support safe healing. Call today!",
-  alternates: { canonical: "https://renoregen.com/conditions/whiplash/" },
+  alternates: { canonical: "https://www.renoregen.com/conditions/whiplash/" },
 };
 
 const PROSE =

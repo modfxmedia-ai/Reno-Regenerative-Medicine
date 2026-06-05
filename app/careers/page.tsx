@@ -11,7 +11,7 @@ const meta = getMeta("/careers/")!;
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.description,
-  alternates: { canonical: "https://renoregen.com/careers/" },
+  alternates: { canonical: "https://www.renoregen.com/careers/" },
 };
 
 const VALUES = [

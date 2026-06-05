@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Backpackers’ Guide: Sciatica Treatment Options",
   description:
     "Explore proven ways to ease pain on the go, from stretching to clinical care, plus where to find sciatica treatment in Reno for fast relief",
-  alternates: { canonical: "https://renoregen.com/backpackers-guide-sciatica-treatment-options/" },
+  alternates: { canonical: "https://www.renoregen.com/backpackers-guide-sciatica-treatment-options/" },
   openGraph: {
     title: "Backpackers’ Guide: Sciatica Treatment Options",
     description:
       "Explore proven ways to ease pain on the go, from stretching to clinical care, plus where to find sciatica treatment in Reno for fast relief",
-    url: "https://renoregen.com/backpackers-guide-sciatica-treatment-options/",
+    url: "https://www.renoregen.com/backpackers-guide-sciatica-treatment-options/",
     type: "article",
     publishedTime: "2026-05-03T17:00:00+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/backpackers-guide-sciatica-treatment-options/                            */
+/*  Verbatim body content from https://www.renoregen.com/backpackers-guide-sciatica-treatment-options/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

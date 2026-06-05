@@ -28,7 +28,7 @@ const d = (s: string) => s;
 export const PAGES: PageMeta[] = [
   {
     slug: "/",
-    title: "Welcome to Reno Regenerative | Integrative Medicine Clinic",
+    title: "Integrative Medicine Clinic in Reno, NV",
     description:
       "Looking for an integrative medicine center? Reno Regenerative Medicine helps with knee, back, and joint pain, helping your body heal naturally. Call today!",
     priority: 1.0,
@@ -36,7 +36,7 @@ export const PAGES: PageMeta[] = [
   },
   {
     slug: "/about/",
-    title: "About Reno Regenerative | Pain Management Experts",
+    title: "About | Pain Management Experts in Reno, NV",
     description:
       "Chronic discomfort can feel isolating. Our dedicated staff is here to listen, support you, and help manage your pain without relying on surgery. Reach out!",
     priority: 0.8,
@@ -57,7 +57,7 @@ export const PAGES: PageMeta[] = [
   },
   {
     slug: "/conditions/",
-    title: "Conditions We Treat at Reno Regenerative | Book Now",
+    title: "Conditions We Treat | Book Now",
     description:
       "Are you struggling with ongoing pain? Explore the conditions we treat with our natural, holistic methods. Let us help you heal. Book a consultation today.",
     priority: 0.8,
@@ -243,7 +243,7 @@ export const PAGES: PageMeta[] = [
   },
   {
     slug: "/conditions/neck-pain/",
-    title: "Compassionate Care for Neck Pain | Reno Regenerative",
+    title: "Compassionate Care for Neck Pain",
     description:
       "Constant neck soreness and stiffness make it hard to focus. Our team works on gently aligning your spine and reducing muscle strain. Book a visit now.",
     priority: 0.8,
@@ -271,14 +271,14 @@ export const PAGES: PageMeta[] = [
   },
   {
     slug: "/conditions/whiplash/",
-    title: "Whiplash Therapy Options at Reno Regenerative",
+    title: "Whiplash Therapy Options",
     description:
       "Whiplash causes severe tension and limited neck movement. Reno Regenerative provides targeted therapies to reduce swelling and support safe healing. Call today!",
     priority: 0.8,
   },
   {
     slug: "/conditions/neuropathy/",
-    title: "Neuropathy | Relief From Nerve Pain | Reno Regenerative",
+    title: "Neuropathy | Relief From Nerve Pain",
     description:
       "Neuropathy often causes numbness that throws off your balance. Reno Regenerative aims to heal damaged nerves naturally, improving your daily comfort. Visit us!",
     priority: 0.8,

@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Reno Office | Back and Knee Pain Doctor | Visit Us Now",
   description:
     "Stop letting joint aches dictate your daily routine. Our Reno doctor for back and knee pain provides natural therapies for lasting relief. Book an appointment!",
-  alternates: { canonical: "https://renoregen.com/reno-office/" },
+  alternates: { canonical: "https://www.renoregen.com/reno-office/" },
   openGraph: {
     title: "Reno Office | Back and Knee Pain Doctor | Visit Us Now",
     description:
       "Stop letting joint aches dictate your daily routine. Our Reno doctor for back and knee pain provides natural therapies for lasting relief. Book an appointment!",
-    url: "https://renoregen.com/reno-office/",
+    url: "https://www.renoregen.com/reno-office/",
     type: "website",
   },
 };

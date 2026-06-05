@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Contact Us | Pain Management Clinic in Reno, NV",
   description:
     "Find relief at Reno Regenerative. Explore our Contact Us page to learn how our Reno pain management clinic can help you. Call now!",
-  alternates: { canonical: "https://renoregen.com/contact/" },
+  alternates: { canonical: "https://www.renoregen.com/contact/" },
   openGraph: {
     title: "Contact Us | Pain Management Clinic in Reno, NV",
     description:
       "Find relief at Reno Regenerative. Explore our Contact Us page to learn how our Reno pain management clinic can help you. Call now!",
-    url: "https://renoregen.com/contact/",
+    url: "https://www.renoregen.com/contact/",
     type: "website",
   },
 };

@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Safe Recovery After a Fall With Physical Therapy",
   description:
     "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"After the Fall: How Physical Therapy in Reno Can Get You Back on Your Feet Safely\".",
-  alternates: { canonical: "https://renoregen.com/after-the-fall-how-physical-therapy-in-reno-can-get-you-back-on-your-feet-safely/" },
+  alternates: { canonical: "https://www.renoregen.com/after-the-fall-how-physical-therapy-in-reno-can-get-you-back-on-your-feet-safely/" },
   openGraph: {
     title: "Safe Recovery After a Fall With Physical Therapy",
     description:
       "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"After the Fall: How Physical Therapy in Reno Can Get You Back on Your Feet Safely\".",
-    url: "https://renoregen.com/after-the-fall-how-physical-therapy-in-reno-can-get-you-back-on-your-feet-safely/",
+    url: "https://www.renoregen.com/after-the-fall-how-physical-therapy-in-reno-can-get-you-back-on-your-feet-safely/",
     type: "article",
     publishedTime: "2025-12-16T22:23:08+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/after-the-fall-how-physical-therapy-in-reno-can-get-you-back-on-your-feet-safely/                            */
+/*  Verbatim body content from https://www.renoregen.com/after-the-fall-how-physical-therapy-in-reno-can-get-you-back-on-your-feet-safely/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

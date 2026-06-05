@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Read Our Blog | Wellness and Pain Management Insights",
   description:
     "Navigating your health can feel overwhelming. We share pain relief and wellness insights to help you understand your body better. Read our blog today!",
-  alternates: { canonical: "https://renoregen.com/blog/" },
+  alternates: { canonical: "https://www.renoregen.com/blog/" },
   openGraph: {
     title: "Read Our Blog | Wellness and Pain Management Insights",
     description:
       "Navigating your health can feel overwhelming. We share pain relief and wellness insights to help you understand your body better. Read our blog today!",
-    url: "https://renoregen.com/blog/",
+    url: "https://www.renoregen.com/blog/",
     type: "website",
   },
 };

@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "That Numbness in your Feet when Walking Could Be Neuropathy",
   description:
     "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"That Numbness in your Feet when Walking Could Be Neuropathy\".",
-  alternates: { canonical: "https://renoregen.com/that-numbness-in-your-feet-when-walking-could-be-neuropathy/" },
+  alternates: { canonical: "https://www.renoregen.com/that-numbness-in-your-feet-when-walking-could-be-neuropathy/" },
   openGraph: {
     title: "That Numbness in your Feet when Walking Could Be Neuropathy",
     description:
       "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"That Numbness in your Feet when Walking Could Be Neuropathy\".",
-    url: "https://renoregen.com/that-numbness-in-your-feet-when-walking-could-be-neuropathy/",
+    url: "https://www.renoregen.com/that-numbness-in-your-feet-when-walking-could-be-neuropathy/",
     type: "article",
     publishedTime: "2025-08-21T20:45:59+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/that-numbness-in-your-feet-when-walking-could-be-neuropathy/                            */
+/*  Verbatim body content from https://www.renoregen.com/that-numbness-in-your-feet-when-walking-could-be-neuropathy/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

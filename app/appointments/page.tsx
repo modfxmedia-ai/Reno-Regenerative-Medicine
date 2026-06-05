@@ -11,11 +11,11 @@ const meta = getMeta("/appointments/")!;
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.description,
-  alternates: { canonical: `https://renoregen.com/appointments/` },
+  alternates: { canonical: `https://www.renoregen.com/appointments/` },
   openGraph: {
     title: meta.title,
     description: meta.description,
-    url: "https://renoregen.com/appointments/",
+    url: "https://www.renoregen.com/appointments/",
     type: "website",
   },
 };

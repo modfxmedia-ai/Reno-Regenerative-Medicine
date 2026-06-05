@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Watch Inspiring Video Testimonials From Our Patients",
   description:
     "Seeing others heal can inspire your own recovery. Watch video testimonials from real people who found relief at Reno Regenerative. Contact us today!",
-  alternates: { canonical: "https://renoregen.com/video-testimonials/" },
+  alternates: { canonical: "https://www.renoregen.com/video-testimonials/" },
   openGraph: {
     title: "Watch Inspiring Video Testimonials From Our Patients",
     description:
       "Seeing others heal can inspire your own recovery. Watch video testimonials from real people who found relief at Reno Regenerative. Contact us today!",
-    url: "https://renoregen.com/video-testimonials/",
+    url: "https://www.renoregen.com/video-testimonials/",
     type: "website",
   },
 };

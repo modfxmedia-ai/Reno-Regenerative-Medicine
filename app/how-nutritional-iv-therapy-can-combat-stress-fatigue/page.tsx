@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "How Nutritional IV Therapy Can Combat Stress & Fatigue",
   description:
     "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"How Nutritional IV Therapy Can Combat Stress & Fatigue\".",
-  alternates: { canonical: "https://renoregen.com/how-nutritional-iv-therapy-can-combat-stress-fatigue/" },
+  alternates: { canonical: "https://www.renoregen.com/how-nutritional-iv-therapy-can-combat-stress-fatigue/" },
   openGraph: {
     title: "How Nutritional IV Therapy Can Combat Stress & Fatigue",
     description:
       "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"How Nutritional IV Therapy Can Combat Stress & Fatigue\".",
-    url: "https://renoregen.com/how-nutritional-iv-therapy-can-combat-stress-fatigue/",
+    url: "https://www.renoregen.com/how-nutritional-iv-therapy-can-combat-stress-fatigue/",
     type: "article",
     publishedTime: "2025-09-28T02:48:06+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/how-nutritional-iv-therapy-can-combat-stress-fatigue/                            */
+/*  Verbatim body content from https://www.renoregen.com/how-nutritional-iv-therapy-can-combat-stress-fatigue/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

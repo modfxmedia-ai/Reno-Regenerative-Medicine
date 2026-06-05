@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "Habits That Make Knee Pain Worse and How to Stop",
   description:
     "Learn which everyday routines can intensify knee pain and when to see a knee pain doctor in Reno for integrative, non-surgical relief options.",
-  alternates: { canonical: "https://renoregen.com/habits-that-quietly-worsen-knee-pain/" },
+  alternates: { canonical: "https://www.renoregen.com/habits-that-quietly-worsen-knee-pain/" },
   openGraph: {
     title: "Habits That Make Knee Pain Worse and How to Stop",
     description:
       "Learn which everyday routines can intensify knee pain and when to see a knee pain doctor in Reno for integrative, non-surgical relief options.",
-    url: "https://renoregen.com/habits-that-quietly-worsen-knee-pain/",
+    url: "https://www.renoregen.com/habits-that-quietly-worsen-knee-pain/",
     type: "article",
     publishedTime: "2026-05-10T17:00:00+00:00",
     images: [post.image],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 /* ------------------------------------------------------------------ */
 /*  Verbatim body content from                                        */
-/*  https://renoregen.com/habits-that-quietly-worsen-knee-pain/       */
+/*  https://www.renoregen.com/habits-that-quietly-worsen-knee-pain/       */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

@@ -49,10 +49,36 @@ export default function PageHero({
   ctaLabel = "Request Appointment",
   size = "md",
 }: PageHeroProps) {
+  const breadcrumbJsonLd =
+    breadcrumbs && breadcrumbs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: breadcrumbs.map((c, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: c.label,
+            ...(c.href
+              ? {
+                  item: c.href.startsWith("http")
+                    ? c.href
+                    : `https://www.renoregen.com${c.href === "/" ? "/" : c.href.endsWith("/") ? c.href : `${c.href}/`}`,
+                }
+              : {}),
+          })),
+        }
+      : null;
+
   return (
     <section
       className={`relative isolate w-full overflow-hidden bg-[#0a120d] text-white ${sizes[size]}`}
     >
+      {breadcrumbJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+      )}
       {/* Background image */}
       <Image
         src={image}

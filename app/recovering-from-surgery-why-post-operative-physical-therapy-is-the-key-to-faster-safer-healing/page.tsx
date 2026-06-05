@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Recovering From Surgery? Why Post-Operative Physical Therapy in Reno Is the Key to Faster, Safer Healing",
   description:
     "Discover how post-operative physical therapy in Reno speeds recovery, restores strength, and improves long-term results after surgery.",
-  alternates: { canonical: "https://renoregen.com/recovering-from-surgery-why-post-operative-physical-therapy-is-the-key-to-faster-safer-healing/" },
+  alternates: { canonical: "https://www.renoregen.com/recovering-from-surgery-why-post-operative-physical-therapy-is-the-key-to-faster-safer-healing/" },
   openGraph: {
     title: "Recovering From Surgery? Why Post-Operative Physical Therapy in Reno Is the Key to Faster, Safer Healing",
     description:
       "Discover how post-operative physical therapy in Reno speeds recovery, restores strength, and improves long-term results after surgery.",
-    url: "https://renoregen.com/recovering-from-surgery-why-post-operative-physical-therapy-is-the-key-to-faster-safer-healing/",
+    url: "https://www.renoregen.com/recovering-from-surgery-why-post-operative-physical-therapy-is-the-key-to-faster-safer-healing/",
     type: "article",
     publishedTime: "2025-11-25T21:26:10+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/recovering-from-surgery-why-post-operative-physical-therapy-is-the-key-to-faster-safer-healing/                            */
+/*  Verbatim body content from https://www.renoregen.com/recovering-from-surgery-why-post-operative-physical-therapy-is-the-key-to-faster-safer-healing/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

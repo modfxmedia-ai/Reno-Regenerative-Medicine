@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Natural Joint Pain Relief to Keep You Moving Comfortably",
   description:
     "Wear and tear can leave your joints stiff and swollen. Reno Regenerative uses targeted injections to repair tissue and calm inflammation. Call us now!",
-  alternates: { canonical: "https://renoregen.com/conditions/joint-pain/" },
+  alternates: { canonical: "https://www.renoregen.com/conditions/joint-pain/" },
 };
 
 const PROSE =

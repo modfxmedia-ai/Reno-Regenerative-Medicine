@@ -225,8 +225,7 @@ export default function WhereIsYourPain() {
             id="bodymap-heading"
             className="mt-5 font-serif-display text-5xl sm:text-6xl tracking-[-0.02em]"
           >
-            Where Is Your{" "}
-            <em className="italic font-medium text-[#f3d99a]">Pain?</em>
+            Where Is Your <em className="italic font-medium text-[#f3d99a]">Pain?</em>
           </h2>
           <p className="mt-4 text-white/65">
             Learn how we can help with your pain

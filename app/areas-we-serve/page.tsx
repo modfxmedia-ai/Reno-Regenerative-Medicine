@@ -10,7 +10,7 @@ import services from "@/app/lib/pseo/services";
 
 import AreasGrid from "./AreasGrid";
 
-const SITE_URL = "https://renoregen.com";
+const SITE_URL = "https://www.renoregen.com";
 
 export const metadata: Metadata = buildMetadata({ slug: "/areas-we-serve/" });
 

@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Why Knees Hurt When Walking Down The Stairs",
   description:
     "Discover why your knees hurt when going down stairs and how knee decompression therapy can relieve pressure and restore joint function.",
-  alternates: { canonical: "https://renoregen.com/why-your-knees-hurt-more-when-going-down-stairs-what-it-means-for-your-joint-health/" },
+  alternates: { canonical: "https://www.renoregen.com/why-your-knees-hurt-more-when-going-down-stairs-what-it-means-for-your-joint-health/" },
   openGraph: {
     title: "Why Knees Hurt When Walking Down The Stairs",
     description:
       "Discover why your knees hurt when going down stairs and how knee decompression therapy can relieve pressure and restore joint function.",
-    url: "https://renoregen.com/why-your-knees-hurt-more-when-going-down-stairs-what-it-means-for-your-joint-health/",
+    url: "https://www.renoregen.com/why-your-knees-hurt-more-when-going-down-stairs-what-it-means-for-your-joint-health/",
     type: "article",
     publishedTime: "2026-03-11T16:13:23+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/why-your-knees-hurt-more-when-going-down-stairs-what-it-means-for-your-joint-health/                            */
+/*  Verbatim body content from https://www.renoregen.com/why-your-knees-hurt-more-when-going-down-stairs-what-it-means-for-your-joint-health/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

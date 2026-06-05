@@ -10,7 +10,7 @@ const meta = getMeta("/privacy-policy/")!;
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.description,
-  alternates: { canonical: "https://renoregen.com/privacy-policy/" },
+  alternates: { canonical: "https://www.renoregen.com/privacy-policy/" },
 };
 
 const SECTIONS: { id: string; label: string }[] = [

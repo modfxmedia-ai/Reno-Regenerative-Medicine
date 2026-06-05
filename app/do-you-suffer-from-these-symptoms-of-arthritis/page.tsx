@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Do You Suffer from These Symptoms of Arthritis?",
   description:
     "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Do You Suffer from These Symptoms of Arthritis?\".",
-  alternates: { canonical: "https://renoregen.com/do-you-suffer-from-these-symptoms-of-arthritis/" },
+  alternates: { canonical: "https://www.renoregen.com/do-you-suffer-from-these-symptoms-of-arthritis/" },
   openGraph: {
     title: "Do You Suffer from These Symptoms of Arthritis?",
     description:
       "Stay informed with our blog on integrative and regenerative medicine in Reno, NV. Read our new post titled \"Do You Suffer from These Symptoms of Arthritis?\".",
-    url: "https://renoregen.com/do-you-suffer-from-these-symptoms-of-arthritis/",
+    url: "https://www.renoregen.com/do-you-suffer-from-these-symptoms-of-arthritis/",
     type: "article",
     publishedTime: "2021-07-14T18:56:48+00:00",
     images: [post.image],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Verbatim body content from https://renoregen.com/do-you-suffer-from-these-symptoms-of-arthritis/                            */
+/*  Verbatim body content from https://www.renoregen.com/do-you-suffer-from-these-symptoms-of-arthritis/                            */
 /* ------------------------------------------------------------------ */
 export default function Page() {
   return (

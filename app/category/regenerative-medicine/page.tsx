@@ -7,7 +7,7 @@ const meta = getMeta("/category/regenerative-medicine/")!;
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.description,
-  alternates: { canonical: `https://renoregen.com/category/regenerative-medicine/` },
+  alternates: { canonical: `https://www.renoregen.com/category/regenerative-medicine/` },
 };
 
 export default function Page() {

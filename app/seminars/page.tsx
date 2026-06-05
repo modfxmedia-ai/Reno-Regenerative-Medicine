@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Join Our Health Seminars",
   description:
     "Navigating health choices is easier when you have the right facts. Attend our upcoming seminars to learn about your healing options. Reserve your seat!",
-  alternates: { canonical: "https://renoregen.com/seminars/" },
+  alternates: { canonical: "https://www.renoregen.com/seminars/" },
   openGraph: {
     title: "Join Our Health Seminars",
     description:
       "Navigating health choices is easier when you have the right facts. Attend our upcoming seminars to learn about your healing options. Reserve your seat!",
-    url: "https://renoregen.com/seminars/",
+    url: "https://www.renoregen.com/seminars/",
     type: "website",
   },
 };

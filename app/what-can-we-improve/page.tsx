@@ -11,7 +11,7 @@ const meta = getMeta("/what-can-we-improve/")!;
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.description,
-  alternates: { canonical: "https://renoregen.com/what-can-we-improve/" },
+  alternates: { canonical: "https://www.renoregen.com/what-can-we-improve/" },
 };
 
 export default function Page() {
