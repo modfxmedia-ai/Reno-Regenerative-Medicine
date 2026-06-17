@@ -169,6 +169,13 @@ export const PAGES: PageMeta[] = [
       "Reno Regenerative Medicine serves patients across 35+ Northern Nevada and Eastern California communities. Explore non-surgical pain relief, hormone therapy, and regenerative medicine in your city.",
     priority: 0.8,
   },
+  {
+    slug: "/auto-accident-injury-eugene-or/",
+    title: "Auto Accident Injury Clinic Eugene, OR",
+    description:
+      "Whiplash & car accident injury care for Eugene, OR patients — chiropractic, spinal decompression & joint injections at Reno Regenerative Medicine.",
+    priority: 0.8,
+  },
   // --- Service detail pages ---
   {
     slug: "/joint-injections/",

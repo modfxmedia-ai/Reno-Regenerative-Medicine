@@ -65,6 +65,7 @@ const SERVICE_SLUGS = [
   "/bioidentical-hormone-optimization-therapy/",
   "/ed-shockwave-therapy/",
   "/services/knee-decompression/",
+  "/auto-accident-injury-eugene-or/",
 ];
 
 const SERVICE_PAGES = pickPages(SERVICE_SLUGS);
