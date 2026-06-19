@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #141414;
+
+  /* ManHair brand palette */
+  --ink: #141414;          /* near-black body text */
+  --jet: #0c0c0c;          /* deep black sections */
+  --smoke: #f5f5f5;        /* light grey surface */
+  --steel: #6b6b6b;        /* muted text */
+  --line: #e6e6e6;         /* hairline borders */
+
+  --red: #b71c1c;          /* primary brand red */
+  --red-bright: #db2020;   /* secondary / hover red */
+  --red-deep: #660000;     /* accent / link red */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-jet: var(--jet);
+  --color-smoke: var(--smoke);
+  --color-steel: var(--steel);
+  --color-line: var(--line);
+  --color-red: var(--red);
+  --color-red-bright: var(--red-bright);
+  --color-red-deep: var(--red-deep);
+
+  --font-sans: var(--font-sans-ui);
+  --font-slab: var(--font-slab-display);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans-ui), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+  max-width: 100vw;
+}
+
+.font-slab {
+  font-family: var(--font-slab-display), ui-serif, Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-slab-display), ui-serif, Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+/* Shared body-copy rhythm */
+.body-base,
+.body-base p {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+/* Uppercase eyebrow label */
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+/* Marquee for trust strip */
+.marquee-track {
+  animation: marquee 38s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  html { scroll-behavior: auto; }
+}
