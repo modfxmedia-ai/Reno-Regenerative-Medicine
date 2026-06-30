@@ -62,15 +62,7 @@ export default function RootLayout({
       className={`${sans.variable} ${serif.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body
-        className="min-h-full flex flex-col bg-white text-ink"
-        suppressHydrationWarning
-      >
-        <JsonLd schema={buildMedicalBusinessSchema()} />
-        <Suspense fallback={null}>
-          <ScrollToTop />
-        </Suspense>
-        {children}
+      <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-PFQEPHKT3B"
           strategy="afterInteractive"
@@ -83,6 +75,16 @@ export default function RootLayout({
             gtag('config', 'G-PFQEPHKT3B');
           `}
         </Script>
+      </head>
+      <body
+        className="min-h-full flex flex-col bg-white text-ink"
+        suppressHydrationWarning
+      >
+        <JsonLd schema={buildMedicalBusinessSchema()} />
+        <Suspense fallback={null}>
+          <ScrollToTop />
+        </Suspense>
+        {children}
       </body>
     </html>
   );
