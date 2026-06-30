@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import Script from "next/script";
 import { Suspense } from "react";
 import "./globals.css";
 import ScrollToTop from "./components/ScrollToTop";
@@ -31,6 +32,9 @@ export const metadata: Metadata = {
     "Looking for an integrative medicine center? Reno Regenerative Medicine helps with knee, back, and joint pain, helping your body heal naturally. Call today!",
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
+  verification: {
+    google: "UhwRSp8OCcneNgyrb44d76TSDrDNYhYCnwREeVkHmiU",
+  },
   icons: {
     icon: [
       { url: "/images/fevicon.jpg", type: "image/jpeg" },
@@ -67,6 +71,18 @@ export default function RootLayout({
           <ScrollToTop />
         </Suspense>
         {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-PFQEPHKT3B"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PFQEPHKT3B');
+          `}
+        </Script>
       </body>
     </html>
   );
