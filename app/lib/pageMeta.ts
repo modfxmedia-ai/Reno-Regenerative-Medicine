@@ -491,6 +491,30 @@ const POST_SLUGS: { slug: string; title: string; description: string }[] = [
     description:
       "Common everyday habits that may be silently making your knee pain worse — and what to do instead.",
   },
+  {
+    slug: "/boost-energy-and-recovery-with-iv-therapy-in-reno/",
+    title: "Boost Energy and Recovery With IV Therapy in Reno",
+    description:
+      "Stay energized all summer with nutritional IV therapy in Reno, supporting hydration, recovery, and wellness for active days and faster bounce backs.",
+  },
+  {
+    slug: "/signs-of-hormone-imbalance-vs-normal-aging-in-reno/",
+    title: "Signs of Hormone Imbalance vs Normal Aging in Reno",
+    description:
+      "Learn how to spot hormone imbalance versus normal aging and when to consider hormone therapy in Reno, NV for better energy, mood, and health.",
+  },
+  {
+    slug: "/summer-sports-back-pain-relief-tips-for-nevada-athletes/",
+    title: "Summer Sports Back Pain Relief Tips for Nevada Athletes",
+    description:
+      "Stay active all summer with expert back pain treatment in Reno for Nevada athletes, featuring non-surgical options to reduce pain and improve mobility.",
+  },
+  {
+    slug: "/reno-road-trip-knee-pain-when-to-see-a-doctor/",
+    title: "Reno Road Trip Knee Pain: When to See a Doctor",
+    description:
+      "Road trip knee pain can flare in summer. Learn when to visit a knee pain doctor in Reno and explore integrative options to reduce pain and avoid surgery.",
+  },
 ];
 
 export const POSTS: PageMeta[] = POST_SLUGS.map((p) => ({
