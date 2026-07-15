@@ -313,7 +313,7 @@ export const PAGES: PageMeta[] = [
   },
 ];
 
-// --- BLOG POSTS (26) ---
+// --- BLOG POSTS (29) ---
 const POST_SLUGS: { slug: string; title: string; description: string }[] = [
   {
     slug: "/treat-your-sports-injury-with-chiropractic-care/",
@@ -514,6 +514,24 @@ const POST_SLUGS: { slug: string; title: string; description: string }[] = [
     title: "Reno Road Trip Knee Pain: When to See a Doctor",
     description:
       "Road trip knee pain can flare in summer. Learn when to visit a knee pain doctor in Reno and explore integrative options to reduce pain and avoid surgery.",
+  },
+  {
+    slug: "/persistent-shoulder-pain-may-start-in-your-spine/",
+    title: "Persistent Shoulder Pain May Start in Your Spine",
+    description:
+      "Learn how spine issues can trigger shoulder pain and when to see a shoulder pain doctor in Reno for integrative, non-surgical treatment options.",
+  },
+  {
+    slug: "/integrative-medicine-solutions-for-pain-relief-in-reno/",
+    title: "Integrative Medicine Solutions for Pain Relief in Reno",
+    description:
+      "Explore integrative medicine in Reno with natural, non-surgical care like chiropractic, injections, IV therapy, and hormone support to relieve pain.",
+  },
+  {
+    slug: "/common-shoulder-pain-triggers-for-active-adults-in-reno/",
+    title: "Common Shoulder Pain Triggers for Active Adults in Reno",
+    description:
+      "Discover hidden causes of shoulder pain in active adults and when to see a Reno shoulder pain doctor for non-surgical, integrative care.",
   },
 ];
 
