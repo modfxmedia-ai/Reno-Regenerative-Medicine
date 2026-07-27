@@ -533,6 +533,18 @@ const POST_SLUGS: { slug: string; title: string; description: string }[] = [
     description:
       "Discover hidden causes of shoulder pain in active adults and when to see a Reno shoulder pain doctor for non-surgical, integrative care.",
   },
+  {
+    slug: "/when-knee-pain-signals-a-need-for-expert-care-in-reno/",
+    title: "When Knee Pain Signals a Need for Expert Care in Reno",
+    description:
+      "Learn local warning signs your knee pain needs a pain management clinic in Reno, plus integrative options to relieve pain and avoid surgery.",
+  },
+  {
+    slug: "/signs-joint-pain-may-need-regenerative-treatment/",
+    title: "Signs Joint Pain May Need Regenerative Treatment",
+    description:
+      "Learn everyday warning signs your aches may need regenerative medicine in Reno, plus non surgical options to relieve pain and restore mobility.",
+  },
 ];
 
 export const POSTS: PageMeta[] = POST_SLUGS.map((p) => ({
