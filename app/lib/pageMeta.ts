@@ -545,6 +545,12 @@ const POST_SLUGS: { slug: string; title: string; description: string }[] = [
     description:
       "Learn everyday warning signs your aches may need regenerative medicine in Reno, plus non surgical options to relieve pain and restore mobility.",
   },
+  {
+    slug: "/hormone-therapy-options-for-joint-pain-in-reno-nv/",
+    title: "Hormone Therapy Options for Joint Pain in Reno, NV",
+    description:
+      "Discover how hormone therapy in Reno, NV may reduce joint pain, improve mobility, and support healing with integrative care for lasting relief.",
+  },
 ];
 
 export const POSTS: PageMeta[] = POST_SLUGS.map((p) => ({
