@@ -551,6 +551,12 @@ const POST_SLUGS: { slug: string; title: string; description: string }[] = [
     description:
       "Discover how hormone therapy in Reno, NV may reduce joint pain, improve mobility, and support healing with integrative care for lasting relief.",
   },
+  {
+    slug: "/reno-commute-and-workstation-fixes-ergonomic-tweaks-for-faster-back-pain-relief/",
+    title: "Reno Ergonomic Commute Tips for Faster Back Pain Relief",
+    description:
+      "Learn how small commute and workstation changes can boost back pain treatment in Reno, easing strain and supporting quicker recovery at work and home.",
+  },
 ];
 
 export const POSTS: PageMeta[] = POST_SLUGS.map((p) => ({
