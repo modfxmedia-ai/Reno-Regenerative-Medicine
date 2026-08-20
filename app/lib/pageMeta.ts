@@ -557,6 +557,12 @@ const POST_SLUGS: { slug: string; title: string; description: string }[] = [
     description:
       "Learn how small commute and workstation changes can boost back pain treatment in Reno, easing strain and supporting quicker recovery at work and home.",
   },
+  {
+    slug: "/regenerative-medicine-or-decompression-for-back-pain/",
+    title: "Regenerative Medicine vs. Spinal Decompression in Reno: Who Benefits?",
+    description:
+      "Compare treatment options for chronic back pain and see who benefits most from regenerative medicine in Reno, plus spinal decompression and integrative care.",
+  },
 ];
 
 export const POSTS: PageMeta[] = POST_SLUGS.map((p) => ({
